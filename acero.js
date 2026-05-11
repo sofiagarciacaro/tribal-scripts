@@ -12,83 +12,83 @@
     'Noe M.','Cris R.','Ale G.','Yami S.','Gabi M.'
   ];
   var R = [
-    '"La compré y no me la saco más. El dorado es hermoso y dura."',
+    '"La compre y no me la saco mas. El dorado es hermoso y dura."',
     '"Me la preguntan siempre. Se ve cara y no lo es."',
-    '"La uso todos los días, hasta en el gimnasio. Sigue igual que el primer día."',
-    '"Tengo piel súper sensible y nunca me molestó. Un básico real."',
+    '"La uso todos los dias, hasta en el gimnasio. Sigue igual que el primer dia."',
+    '"Tengo piel super sensible y nunca me molesto. Un basico real."',
     '"Se ve exactamente igual que una de plata. Nadie nota la diferencia."',
-    '"El brillo es hermoso. La cuido bien y sigue igual que el primer día."',
-    '"Los detalles son una locura. Se ve carísima y me preguntan dónde la compré."',
-    '"El diseño es único, no encontré nada igual en ningún otro lado."',
-    '"La usé para un casamiento y quedó perfecta. Se veía re cara y la pagué poco."',
-    '"Los detalles y el brillo son hermosos. Para el precio que tiene es increíble."',
-    '"Divina. La uso todos los días y sigue igual."',
-    '"Perfecta. Llegó rápido y es igual a la foto."',
-    '"Me encantó la calidad. Se nota que es buena."',
-    '"La compré y ya la quiero en otro modelo. Adictiva."',
-    '"Cómoda y hermosa. Combina con todo."',
+    '"El brillo es hermoso. La cuido bien y sigue igual que el primer dia."',
+    '"Los detalles son una locura. Se ve carisima y me preguntan donde la compre."',
+    '"El diseno es unico, no encontre nada igual en ningun otro lado."',
+    '"La use para un casamiento y quedo perfecta. Se veia re cara y la pague poco."',
+    '"Los detalles y el brillo son hermosos. Para el precio que tiene es increible."',
+    '"Divina. La uso todos los dias y sigue igual."',
+    '"Perfecta. Llego rapido y es igual a la foto."',
+    '"Me encanto la calidad. Se nota que es buena."',
+    '"La compre y ya la quiero en otro modelo. Adictiva."',
+    '"Comoda y hermosa. Combina con todo."',
     '"La mejor compra. Es exactamente lo que buscaba."',
     '"Hermosa. La calidad es top para el precio."',
-    '"Llegó perfecta y se ve de muy buena calidad."',
-    '"Re linda. Ya se la recomendé a todas mis amigas."',
+    '"Llego perfecta y se ve de muy buena calidad."',
+    '"Re linda. Ya se la recomende a todas mis amigas."',
     '"La tengo hace meses y sigue igual. Muy buena calidad."',
-    '"Me llegó y me la puse al toque. Perfecta."',
-    '"Es exactamente como en la foto. Llegó rápido."',
-    '"Posta que es hermosa. La uso todos los días."',
-    '"Un básico que no puede faltar."',
-    '"No me la saco ni para dormir. Es comodísima."',
-    '"La mejor inversión. Vale cada peso."',
-    '"Fina, elegante y de buena calidad. Qué más querés."',
+    '"Me llego y me la puse al toque. Perfecta."',
+    '"Es exactamente como en la foto. Llego rapido."',
+    '"Posta que es hermosa. La uso todos los dias."',
+    '"Un basico que no puede faltar."',
+    '"No me la saco ni para dormir. Es comodisima."',
+    '"La mejor inversion. Vale cada peso."',
+    '"Fina, elegante y de buena calidad. Que mas queres."',
     '"El acabado es impecable. Se nota que es buena calidad."',
     '"La uso con todo: casual, arreglada, siempre combina."',
-    '"Llegó súper bien embalada y antes de lo esperado."',
+    '"Llego super bien embalada y antes de lo esperado."',
     '"Mi accesorio favorito del momento. La recomiendo."',
-    '"Es más linda en persona que en la foto, y eso que la foto ya es buena."',
-    '"Calidad increíble para el precio. No esperaba tanto."',
-    '"La uso todos los días y sigue como nueva."',
-    '"Me la regalaron y fue el mejor regalo que recibí."',
+    '"Es mas linda en persona que en la foto, y eso que la foto ya es buena."',
+    '"Calidad increible para el precio. No esperaba tanto."',
+    '"La uso todos los dias y sigue como nueva."',
+    '"Me la regalaron y fue el mejor regalo que recibi."',
     '"Combina con absolutamente todo lo que tengo."',
-    '"Es finita y delicada pero se ve un montón. Me encanta."',
-    '"Perfecta para usar sola o combinada. Muy versátil."',
-    '"Llegó antes de lo esperado y en perfecto estado."',
-    '"Muy buena calidad para el precio. Súper recomendable."',
-    '"Me obsesioné. La quiero en todos los modelos."',
+    '"Es finita y delicada pero se ve un monton. Me encanta."',
+    '"Perfecta para usar sola o combinada. Muy versatil."',
+    '"Llego antes de lo esperado y en perfecto estado."',
+    '"Muy buena calidad para el precio. Super recomendable."',
+    '"Me obsesione. La quiero en todos los modelos."',
     '"Es exactamente lo que necesitaba para completar mi look."',
-    '"La compré para regalo y la terminé quedando yo. Jaja."',
-    '"Súper cómoda, no molesta para nada en todo el día."',
-    '"La recibí y ya la quiero en otro modelo también."',
-    '"No le pierdo el brillo, sigue igual desde el primer día."',
-    '"La tengo en dos modelos. Me obsesioné."',
-    '"Llegó sellada y todo impecable."',
+    '"La compre para regalo y la termine quedando yo. Jaja."',
+    '"Super comoda, no molesta para nada en todo el dia."',
+    '"La recibi y ya la quiero en otro modelo tambien."',
+    '"No le pierdo el brillo, sigue igual desde el primer dia."',
+    '"La tengo en dos modelos. Me obsesione."',
+    '"Llego sellada y todo impecable."',
     '"Se ve cara y no lo es. La recomiendo."',
     '"La mejor. Ya es mi favorita."'
   ];
   var R_PROT = [
-    '"La uso desde que me llegó y no me la saco más. Me da tranquilidad tenerla puesta."',
-    '"Se la compré a mi nena y a mí también. El ojito es hermoso y el significado no tiene precio."',
-    '"La recibí y la até al toque. Hermosa y con mucho significado."',
-    '"Me la regalaron y la uso todos los días. Me encanta el mensaje que tiene."',
-    '"La compré para regalar y terminé quedándome una también. Es muy especial."',
+    '"La uso desde que me llego y no me la saco mas. Me da tranquilidad tenerla puesta."',
+    '"Se la compre a mi nena y a mi tambien. El ojito es hermoso y el significado no tiene precio."',
+    '"La recibi y la ate al toque. Hermosa y con mucho significado."',
+    '"Me la regalaron y la uso todos los dias. Me encanta el mensaje que tiene."',
+    '"La compre para regalar y termine quedandome una tambien. Es muy especial."',
     '"El ojito es divino. Simple, bonito y con mucho significado."',
-    '"Me la ató mi mamá en la muñeca izquierda y no me la saco más."',
-    '"Es el regalo más lindo y significativo que le pude dar. La amó."',
-    '"Se la compré a toda mi familia. Es un regalo que siempre emociona."',
-    '"Hermosa y delicada. El hilo rojo con el ojito es una combinación perfecta."',
-    '"La uso con todo y además me protege. No hay nada mejor."',
-    '"Llegó rápido y bien embalada. El detalle del ojito es precioso."',
-    '"Me la compré para renovar la que se me rompió. Señal de que cumplió su trabajo."',
+    '"Me la ato mi mama en la muneca izquierda y no me la saco mas."',
+    '"Es el regalo mas lindo y significativo que le pude dar. La amo."',
+    '"Se la compre a toda mi familia. Es un regalo que siempre emociona."',
+    '"Hermosa y delicada. El hilo rojo con el ojito es una combinacion perfecta."',
+    '"La uso con todo y ademas me protege. No hay nada mejor."',
+    '"Llego rapido y bien embalada. El detalle del ojito es precioso."',
+    '"Me la compre para renovar la que se me rompio. Senal de que cumplio su trabajo."',
     '"Muy linda y con mucho significado. La recomiendo como regalo."',
     '"La uso hace meses y sigue igual de linda. Me encanta."',
     '"Es simple pero con un significado enorme. La amo."',
-    '"Se la compré a mi hija recién nacida. Es perfecta para protegerla."',
+    '"Se la compre a mi hija recien nacida. Es perfecta para protegerla."',
     '"El ojito brilla hermoso. Se nota que es de buena calidad."',
-    '"Un regalo único y significativo. Todo el mundo me pregunta dónde la compré."',
-    '"La uso en la muñeca izquierda como dice la tradición. Me da paz."',
-    '"Hermosa. El hilo rojo con el dije del ojito es una combinación única."',
-    '"La compré por el significado y también porque es muy linda."',
-    '"Se la regalé a mi mejor amiga y le encantó. La usa todos los días."',
-    '"Es un accesorio que va más allá de la moda. Tiene alma."',
-    '"La renové por tercera vez. Cada vez que se rompe sé que me protegió."'
+    '"Un regalo unico y significativo. Todo el mundo me pregunta donde la compre."',
+    '"La uso en la muneca izquierda como dice la tradicion. Me da paz."',
+    '"Hermosa. El hilo rojo con el dije del ojito es una combinacion unica."',
+    '"La compre por el significado y tambien porque es muy linda."',
+    '"Se la regale a mi mejor amiga y le encanto. La usa todos los dias."',
+    '"Es un accesorio que va mas alla de la moda. Tiene alma."',
+    '"La renove por tercera vez. Cada vez que se rompe se que me protegio."'
   ];
   var MAT = {
     'ACERO QUIRÚRGICO': {
@@ -209,7 +209,10 @@
     '/productos/sin-fin-12mm-05374/':            true,
     '/productos/sin-fin-12mm-black-07080/':      true,
     '/productos/sin-fin-slim-10mm-08996/':       true,
-    '/productos/duna-derecha-05610/':            true
+    '/productos/duna-derecha-05610/':            true,
+    '/productos/yeniss-11mm-11692-i6n9y/':       true,
+    '/productos/lisa-12mm-11694-1j0lz/':         true,
+    '/productos/yeniss-11mm-11691-1dqf8/':       true
   };
   var URL_FALLBACK_AROS = {
     '/productos/gota-jack-23mm-09353/':          'ACERO DORADO',
@@ -234,7 +237,9 @@
     '/productos/corazon-clip-11449-we49i/':      'ACERO DORADO',
     '/productos/ilira-clip-11542-1pbff/':        'ACERO DORADO',
     '/productos/ilira-clip-11543-1esc8/':        'ACERO QUIRÚRGICO',
-    '/productos/corazon-clip-11448-nx2av/':      'ACERO QUIRÚRGICO'
+    '/productos/corazon-clip-11448-nx2av/':      'ACERO QUIRÚRGICO',
+    '/productos/ariel-clip-11689-4gh3p/':        'ACERO DORADO',
+    '/productos/ariel-clip-11690-1ocpt/':        'ACERO QUIRÚRGICO'
   };
   var URL_UNIDAD_AROS = {
     '/productos/mini-kate-06550/':               true,
@@ -255,13 +260,17 @@
     '/productos/corazon-clip-11449-we49i/':      'Clip',
     '/productos/ilira-clip-11542-1pbff/':        'Clip',
     '/productos/ilira-clip-11543-1esc8/':        'Clip',
-    '/productos/corazon-clip-11448-nx2av/':      'Clip'
+    '/productos/corazon-clip-11448-nx2av/':      'Clip',
+    '/productos/ariel-clip-11689-4gh3p/':        'Clip',
+    '/productos/ariel-clip-11690-1ocpt/':        'Clip'
   };
   var URL_CLIP_AROS = {
     '/productos/corazon-clip-11449-we49i/':      true,
     '/productos/ilira-clip-11542-1pbff/':        true,
     '/productos/ilira-clip-11543-1esc8/':        true,
-    '/productos/corazon-clip-11448-nx2av/':      true
+    '/productos/corazon-clip-11448-nx2av/':      true,
+    '/productos/ariel-clip-11689-4gh3p/':        true,
+    '/productos/ariel-clip-11690-1ocpt/':        true
   };
   var URL_FALLBACK_PULSERAS = {
     '/productos/chain-04341/':                   'ACERO BLANCO',
@@ -286,6 +295,9 @@
   };
   var URL_MATERIAL_CUSTOM = {
     '/productos/cristal-red-10345-1k4oq/':       'Tanza y cristales'
+  };
+  var URL_EXCLUIR = {
+    '/productos/set-vitas-11743-86g8y/':         true
   };
 
   function detectarTipo() {
@@ -345,7 +357,7 @@
     return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:680px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
       '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;"><div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">🧿</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">PROTECTORA</div><div style="font-size:10px;color:#888;margin-top:2px;">Mal de ojo y envidia</div></div><div style="flex:1;padding:0 4px;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;"><div style="font-size:26px;margin-bottom:6px;">❤️</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">HILO ROJO</div><div style="font-size:10px;color:#888;margin-top:2px;">Símbolo de protección</div></div><div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">✨</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">ENERGÍA POSITIVA</div><div style="font-size:10px;color:#888;margin-top:2px;">Para vos y los tuyos</div></div></div>' +
       '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">🧿 Por qué la pulsera roja protege</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">❤️ El hilo rojo — una protección milenaria</div><div style="font-size:12px;color:#666;line-height:1.6;">El hilo rojo es uno de los amuletos más antiguos del mundo. Se usa en la muñeca izquierda — el lado del corazón — para proteger de las energías negativas, el mal de ojo y la envidia. No es solo un accesorio: es un escudo invisible que cargás con vos.</div></div></div></div>' +
-      '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">🌟 Cómo usarla</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:flex;flex-direction:column;gap:12px;"><div style="display:flex;gap:10px;align-items:flex-start;"><span style="font-size:16px;flex-shrink:0;">🤝</span><div><div style="font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:2px;">Atala en la muñeca izquierda</div><div style="font-size:12px;color:#666;line-height:1.6;">La muñeca izquierda es el lado del corazón — el lugar indicado para recibir protección.</div></div></div><div style="display:flex;gap:10px;align-items:flex-start;"><span style="font-size:16px;flex-shrink:0;">🧿</span><div><div style="font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:2px;">Usala todo el tiempo</div><div style="font-size:12px;color:#666;line-height:1.6;">Cuanto más tiempo la uses, más energía protectora acumula. No hace falta sacársela.</div></div></div><div style="display:flex;gap:10px;align-items:flex-start;"><span style="font-size:16px;flex-shrink:0;">🔄</span><div><div style="font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:2px;">Cuando se rompe o se cae — renovála</div><div style="font-size:12px;color:#666;line-height:1.6;">Cuando la pulsera se pierde o se suelta sola, es señal de que ya protegió y cumplió su ciclo. Es momento de renovarla con una nueva.</div></div></div></div></div></div>' +
+      '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">🌟 Cómo usarla</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:flex;flex-direction:column;gap:12px;"><div style="display:flex;gap:10px;align-items:flex-start;"><span style="font-size:16px;flex-shrink:0;">🤝</span><div><div style="font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:2px;">Atala en la muñeca izquierda</div><div style="font-size:12px;color:#666;line-height:1.6;">La muñeca izquierda es el lado del corazón — el lugar indicado para recibir protección.</div></div></div><div style="display:flex;gap:10px;align-items:flex-start;"><span style="font-size:16px;flex-shrink:0;">🧿</span><div><div style="font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:2px;">Usala todo el tiempo</div><div style="font-size:12px;color:#666;line-height:1.6;">Cuanto más tiempo la uses, más energía protectora acumula. No hace falta sacársela.</div></div></div><div style="display:flex;gap:10px;align-items:flex-start;"><span style="font-size:16px;flex-shrink:0;">🔄</span><div><div style="font-size:12px;font-weight:700;color:#1a1a1a;margin-bottom:2px;">Cuando se rompe o se cae — renová la</div><div style="font-size:12px;color:#666;line-height:1.6;">Cuando la pulsera se pierde o se suelta sola, es señal de que ya protegió y cumplió su ciclo. Es momento de renovarla con una nueva.</div></div></div></div></div></div>' +
       '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">📋 Descripción</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + matDisplay + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Dónde usarla</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Muñeca izquierda</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Cierre</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Se ata</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Unidad</div></div></div></div></div>' +
       '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 Cómo cuidarla</div><div style="font-size:12px;color:#555;line-height:1.9;">✓ Podés usarla todo el tiempo — es parte de su función<br>✓ Si se moja o se ensucia, dejala secar naturalmente<br>✓ Cuando se rompe o se cae sola, es momento de renovarla 🧿</div></div>' +
       '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya la tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div></div>' +
@@ -398,6 +410,8 @@
   }
 
   function inyectar() {
+    var path = window.location.pathname.replace(/\/$/, '') + '/';
+    if (URL_EXCLUIR[path]) return;
     var tipo = detectarTipo();
     if (!tipo) return;
     var contenedor = document.querySelector('#product-description');
