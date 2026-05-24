@@ -70,6 +70,26 @@
   };
 
   var SETS = {
+    'set-lula-11776': {
+      tipo: 'aros',
+      material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
+      piezas: '4 joyitas',
+      hook: 'Cuatro joyitas de plata, un look armado.',
+      hookSub: 'Rayo con presencia + lisas y shiny que cierran el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Argolla Rayo 12mm', 'Argollas Lisas 12mm · 1 par', 'Argollita Shiny Lula 10mm'],
+      talle: null,
+      cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-paulin-11775': {
+      tipo: 'aros',
+      material: 'BRONCE ENCHAPADO', materialSub: 'Enchapado en oro', materialEmoji: '✨',
+      piezas: '2 pares',
+      hook: 'Mia + Paulin — el dúo dorado.',
+      hookSub: 'Dos argollas que se complementan solas.<br>El look dorado ya está armado.',
+      items: ['Argollas Mia Gold 15mm · 1 par', 'Argollas Paulin Gold 14mm · 1 par'],
+      talle: null,
+      cuidadoTitulo: 'Cómo cuidarlos'
+    },
     'set-sabrina-11180': {
       tipo: 'aros',
       material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
