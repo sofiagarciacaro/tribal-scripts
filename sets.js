@@ -729,6 +729,36 @@
       items: ['Argollas Coca 28mm · 1 par', 'Perlitas 8mm · 1 par'],
       talle: null,
       cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-cora-11777': {
+      tipo: 'aros',
+      material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
+      piezas: '5 joyitas',
+      hook: 'Cinco joyitas de plata, el look de orejas completo.',
+      hookSub: 'Cora y Lisas con presencia + Archie White que cierra el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Argollitas Cora 10mm · 1 par', 'Argollas Lisas 10mm · 1 par', 'Argollita Archie White 8mm'],
+      talle: null,
+      cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-balit-11778': {
+      tipo: 'aros',
+      material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
+      piezas: '4 joyitas',
+      hook: 'Cuatro joyitas de plata, el look completo.',
+      hookSub: 'Bali Titi con presencia + Ginebra y Shiny que cierran el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Argollitas Bali Titi 8mm · 1 par', 'Argollita Ginebra 7mm', 'Argollita Shiny 7mm'],
+      talle: null,
+      cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-emi-11779': {
+      tipo: 'aros',
+      material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
+      piezas: '4 joyitas',
+      hook: 'Cuatro argollitas de plata, un look armado.',
+      hookSub: 'Selene, Cira y dos Emi en distintos tamaños que conviven perfecto.<br>Ya pensamos la combinación por vos.',
+      items: ['Argollita Selene 10mm', 'Argollita Cira 10mm', 'Argollita Emi 10mm', 'Argollita Emi 8mm'],
+      talle: null,
+      cuidadoTitulo: 'Cómo cuidarlos'
     }
   };
 
