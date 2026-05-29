@@ -85,9 +85,11 @@
   function n1(i){ return N[i % 50]; }
   function n2(i){ return N[(i + 25) % 50]; }
 
-  var ACORDEON = '<div style="border-top:1px solid #e0e0e0;margin-top:8px;"><div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;cursor:pointer;user-select:none;" onclick="toggleArgollas()"><span style="font-size:13px;font-weight:600;color:#222;text-transform:uppercase;letter-spacing:1px;">📏 Sobre la medida de nuestras argollas</span><span id="tribal-argollas-icono" style="font-size:16px;transition:transform 0.3s ease;">▾</span></div><div id="tribal-argollas-body" style="display:none;padding-bottom:16px;font-size:13px;color:#444;line-height:1.7;"><p>La medida que indicamos es el <strong>diámetro externo</strong> de la argolla — o sea, el tamaño total de un extremo al otro por afuera.</p><p>Por ejemplo, una argolla de <strong>10mm</strong> mide 10mm de lado a lado por fuera.</p><img src="https://d1a9qnv764bsoo.cloudfront.net/stores/001/149/801/rte/medida.png" style="width:100%;max-width:280px;display:block;margin:10px auto;border-radius:8px;" alt="Medida diámetro externo argolla"></div></div>';
+  var MEDIDA = '<div style="border:1px solid #e8e8e8;border-radius:12px;overflow:hidden;margin-bottom:24px;"><div style="background:#df598c;color:white;padding:14px 16px;font-size:13px;font-weight:700;letter-spacing:0.3px;">📏 Sobre la medida de nuestras argollas</div><div style="padding:16px;"><div style="display:flex;gap:16px;align-items:center;margin-bottom:16px;"><img src="https://d1a9qnv764bsoo.cloudfront.net/stores/001/149/801/rte/medida.png" style="width:140px;flex-shrink:0;border-radius:8px;" alt="Medida argolla"><div style="font-size:12px;color:#555;line-height:1.8;"><p style="margin:0 0 8px;color:#1a1a1a;font-weight:700;">La medida = diámetro externo en mm</p><p style="margin:0 0 8px;">La medida que indicamos es el <strong>diámetro externo</strong> de la argolla — o sea, el tamaño total de un extremo al otro por afuera.</p><p style="margin:0;">Por ejemplo, una argolla de <strong>DIAM</strong> mide DIAM de lado a lado por fuera.</p></div></div></div></div>';
 
   function buildHTML(cardHeader, card1t, card1txt, material, diametro, dondeUsarla, cierre, precioPor, r1txt, r1nom, r2txt, r2nom, hookEmoji, hookTitulo, hookTexto, esShiny, shinyData) {
+
+    var medidaBlock = MEDIDA.replace(/DIAM/g, diametro || '—');
 
     var badges = esShiny
       ? '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">🔥</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">BEST SELLER</div><div style="font-size:10px;color:#888;margin-top:2px;">LA MÁS ELEGIDA</div></div>'
@@ -109,7 +111,8 @@
     var guardarLabel = esShiny ? shinyData.guardarLabel : 'Guardala';
     var tienenLabel  = esShiny ? shinyData.tienenLabel : 'Lo que dicen las que ya la tienen';
 
-    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:680px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
+    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
+      medidaBlock +
       '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;">' +
         '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">✨</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">PLATA 925 REAL</div><div style="font-size:10px;color:#888;margin-top:2px;">PLATA 925</div></div>' +
         '<div style="flex:1;padding:0 4px;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;"><div style="font-size:26px;margin-bottom:6px;">💎</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">PREMIUM</div><div style="font-size:10px;color:#888;margin-top:2px;">CALIDAD SUPERIOR</div></div>' +
@@ -125,7 +128,6 @@
       '</div></div></div>' +
       '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 ' + cuidadoLabel + '</div><div style="font-size:12px;color:#555;line-height:1.9;">✓ Limpiá con un paño suave y seco<br>✓ ' + guardarLabel + ' separada de otras piezas para evitar rozaduras<br>✓ Son joyitas delicadas — con un poco de amor duran muchísimo 🤍</div></div>' +
       '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 ' + tienenLabel + '</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1txt + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + r1nom + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2txt + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + r2nom + ' · Compra verificada ✓</div></div></div>' +
-      ACORDEON +
     '</div>';
   }
 
