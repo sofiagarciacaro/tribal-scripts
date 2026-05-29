@@ -159,7 +159,7 @@
     var idx = mat === 'dorado' ? 3 : 0;
     var r1 = R_PISTOLA[idx % 10]; var n1 = N_PISTOLA[idx % 10];
     var r2 = R_PISTOLA[(idx + 5) % 10]; var n2 = N_PISTOLA[(idx + 5) % 10];
-    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:680px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
+    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
       '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;">' +
         '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">🧴</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">YA ESTERILIZADA</div><div style="font-size:10px;color:#888;margin-top:2px;">Lista para usar</div></div>' +
         '<div style="flex:1;padding:0 4px;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;"><div style="font-size:26px;margin-bottom:6px;">' + m.badge2e + '</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">' + m.badge2t + '</div><div style="font-size:10px;color:#888;margin-top:2px;">' + m.badge2s + '</div></div>' +
@@ -173,7 +173,7 @@
   }
 
   function buildRepuesto() {
-    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:680px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
+    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
       '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;">' +
         '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">🧴</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">YA ESTERILIZADOS</div><div style="font-size:10px;color:#888;margin-top:2px;">Listos para usar</div></div>' +
         '<div style="flex:1;padding:0 4px;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;"><div style="font-size:26px;margin-bottom:6px;">💪</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">ACERO QUIRÚRGICO</div><div style="font-size:10px;color:#888;margin-top:2px;">Hipoalergénico</div></div>' +
@@ -198,7 +198,7 @@
     } else {
       r1 = m.r1; n1 = m.n1; r2 = m.r2; n2 = m.n2;
     }
-    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:680px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
+    return '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
       '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;">' +
         '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">' + m.badge1e + '</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">' + m.badge1t + '</div><div style="font-size:10px;color:#888;margin-top:2px;">' + m.badge1s + '</div></div>' +
         '<div style="flex:1;padding:0 4px;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;"><div style="font-size:26px;margin-bottom:6px;">🩷</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">CIERRE TAPITA</div><div style="font-size:10px;color:#888;margin-top:2px;">No pincha</div></div>' +
