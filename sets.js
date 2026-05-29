@@ -793,7 +793,7 @@
 
   var matLabel = S.material.charAt(0) + S.material.slice(1).toLowerCase();
 
-  cont.innerHTML = '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:680px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
+  cont.innerHTML = '<div class="tribal-desc" style="font-family:\'Montserrat\',sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
 
     '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;">' +
       '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">' + S.materialEmoji + '</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">' + S.material + '</div><div style="font-size:10px;color:#888;margin-top:2px;">' + S.materialSub + '</div></div>' +
