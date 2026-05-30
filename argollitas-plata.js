@@ -100,7 +100,7 @@
       : '';
 
     var cardContent = esShiny
-      ? '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;border-bottom:1px solid #f5f5f5;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">✨ Combina con absolutamente todo</div><div style="font-size:12px;color:#666;line-height:1.6;">Sola ya brilla. Combinada con otras piezas, el look explota. El punto de partida perfecto.</div></div><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + shinyData.card2t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + shinyData.card2txt + '</div></div></div>'
+      ? '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;border-bottom:1px solid #f5f5f5;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">🤍 Combina con absolutamente todo</div><div style="font-size:12px;color:#666;line-height:1.6;">Sola ya brilla. Combinada con otras piezas, el look explota. El punto de partida perfecto.</div></div><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + shinyData.card2t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + shinyData.card2txt + '</div></div></div>'
       : '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + card1t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + card1txt + '</div></div></div>';
 
     var fichaShinyExtra = esShiny
