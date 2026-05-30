@@ -1,17 +1,5 @@
 (function() {
 
-  window.toggleArgollas = function() {
-    var b = document.getElementById('tribal-argollas-body');
-    var i = document.getElementById('tribal-argollas-icono');
-    if (b.style.display === 'block') {
-      b.style.display = 'none';
-      i.style.transform = '';
-    } else {
-      b.style.display = 'block';
-      i.style.transform = 'rotate(180deg)';
-    }
-  };
-
   var descripciones = {};
 
   var R = [
@@ -100,7 +88,7 @@
       : '';
 
     var cardContent = esShiny
-      ? '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;border-bottom:1px solid #f5f5f5;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">🤍 Combina con absolutamente todo</div><div style="font-size:12px;color:#666;line-height:1.6;">Sola ya brilla. Combinada con otras piezas, el look explota. El punto de partida perfecto.</div></div><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + shinyData.card2t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + shinyData.card2txt + '</div></div></div>'
+      ? '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;border-bottom:1px solid #f5f5f5;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">✨ Combina con absolutamente todo</div><div style="font-size:12px;color:#666;line-height:1.6;">Sola ya brilla. Combinada con otras piezas, el look explota. El punto de partida perfecto.</div></div><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + shinyData.card2t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + shinyData.card2txt + '</div></div></div>'
       : '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + card1t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + card1txt + '</div></div></div>';
 
     var fichaShinyExtra = esShiny
@@ -146,11 +134,11 @@
 
   function shiny(diametro,card2t,card2txt,precioPor,usarLabel,cuidarLabel,guardarLabel,tienenLabel,r1txt,r1nom,r2txt,r2nom){
     var sd = {card2t:card2t,card2txt:card2txt,usarLabel:usarLabel,cuidarLabel:cuidarLabel,guardarLabel:guardarLabel,tienenLabel:tienenLabel};
-    return buildHTML('✨ Por qué la Shiny es la Shiny',null,null,'Plata 925',diametro,null,null,precioPor,r1txt,r1nom,r2txt,r2nom,'💎','La joyita que no te podés sacar.','Brillosa y versátil. Va con todo y es fácil de poner.<br>La más elegida por ustedes para brillar. ✨',true,sd);
+    return buildHTML('✨ Por qué la Shiny es la Shiny',null,null,'Plata 925',diametro,null,null,precioPor,r1txt,r1nom,r2txt,r2nom,'🤍','La joyita que no te podés sacar.','Brillosa y versátil. Va con todo y es fácil de poner.<br>La más elegida por ustedes para brillar. ✨',true,sd);
   }
 
   function lisa(mm,dondeUsarla,precioPor,r1txt,r1nom,r2txt,r2nom){
-    return buildHTML('✨ Por qué la Lisa es un básico que no puede faltar','💫 Va en cualquier perfo de la oreja','Primera, segunda, tercera o cartílago. Siempre queda bien y combina perfecto con otras joyitas.','Plata 925',mm,dondeUsarla,'Bisagra',precioPor,r1txt,r1nom,r2txt,r2nom,'✨','La argolla que combina con todo.','Lisa, clásica y de calidad real. Va en cualquier perforación de la oreja y se adapta a todos tus looks.',false,null);
+    return buildHTML('✨ Por qué la Lisa es un básico que no puede faltar','💫 Va en cualquier perfo de la oreja','Primera, segunda, tercera o cartílago. Siempre queda bien y combina perfecto con otras joyitas.','Plata 925',mm,dondeUsarla,'Bisagra',precioPor,r1txt,r1nom,r2txt,r2nom,'🤍','La argolla que combina con todo.','Lisa, clásica y de calidad real. Va en cualquier perforación de la oreja y se adapta a todos tus looks.',false,null);
   }
 
   descripciones["/productos/abby-10mm-10515-rz3dq/"]        = HO  ('10 mm',r1(0), n1(0), r2(0), n2(0));
