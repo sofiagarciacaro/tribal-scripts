@@ -69,13 +69,19 @@
     'Cami B.','Gime R.','Luli M.','Feli G.','Maru S.'
   ];
 
+  // Detecta si la URL contiene /par- para mostrar precio por par automáticamente
+  function getPrecioPorTapita(unidadLabel) {
+    var path = window.location.pathname.toLowerCase();
+    return path.indexOf('/par-') !== -1 ? 'Par ✦ Dos aritos' : unidadLabel;
+  }
+
   var MAT_TAPITA = {
     'PLATA 925': {
       badge1e: '✨', badge1t: 'PLATA 925 REAL', badge1s: 'Plata 925',
       cardH: '✨ Por qué el cierre abridor es diferente',
       card1txt: 'El sistema abridor con tapita reemplaza la tuerca mariposa tradicional por un cierre suave que no tiene puntas expuestas. Ideal para bebés o para cuando querés usar tus aritos favoritos sin sentir nada atrás.',
       matLabel: 'Plata 925', dondeLbl: 'Dónde usarlo', dondeVal: 'Oreja',
-      cuidadoLbl: 'Cómo cuidarlo', precioPor: 'Unidad', reviewsLbl: 'Lo que dicen las que ya lo tienen',
+      cuidadoLbl: 'Cómo cuidarlo', precioPorBase: 'Unidad', reviewsLbl: 'Lo que dicen las que ya lo tienen',
       cuidado: '✓ Limpiá con un paño suave y seco<br>✓ Guardalo separado de otras piezas para evitar rozaduras<br>✓ Es una joyita delicada — con un poco de amor dura muchísimo 🤍',
       usePool: true, r1: null, n1: null, r2: null, n2: null
     },
@@ -84,7 +90,7 @@
       cardH: '💪 Por qué el acero quirúrgico es el más elegido',
       card1txt: 'El sistema abridor con tapita reemplaza la tuerca mariposa por un cierre suave sin puntas expuestas. Hipoalergénico, resistente y cómodo para usar todo el día.',
       matLabel: 'Acero quirúrgico', dondeLbl: 'Dónde usarlos', dondeVal: 'Oreja',
-      cuidadoLbl: 'Cómo cuidarlos', precioPor: 'Par ✦ Dos aritos', reviewsLbl: 'Lo que dicen las que ya los tienen',
+      cuidadoLbl: 'Cómo cuidarlos', precioPorBase: 'Par ✦ Dos aritos', reviewsLbl: 'Lo que dicen las que ya los tienen',
       cuidado: '✓ Resistente al agua y al sudor — podés usarlos todo el día<br>✓ Limpiá con un paño suave si hace falta<br>✓ No se oxidan ni ennegrecen con el uso 💪',
       usePool: false,
       r1: '"El cierre tapita es lo mejor. No sentís nada atrás y el acero no me genera ninguna alergia."', n1: 'Sofi G.',
@@ -95,7 +101,7 @@
       cardH: '✨ Por qué el acero dorado es el favorito',
       card1txt: 'El sistema abridor con tapita reemplaza la tuerca mariposa por un cierre suave sin puntas expuestas. El dorado que dura, con el cierre que no molesta.',
       matLabel: 'Acero dorado', dondeLbl: 'Dónde usarlos', dondeVal: 'Oreja',
-      cuidadoLbl: 'Cómo cuidarlos', precioPor: 'Par ✦ Dos aritos', reviewsLbl: 'Lo que dicen las que ya los tienen',
+      cuidadoLbl: 'Cómo cuidarlos', precioPorBase: 'Par ✦ Dos aritos', reviewsLbl: 'Lo que dicen las que ya los tienen',
       cuidado: '✓ Evitá el contacto prolongado con agua, perfume y cremas<br>✓ Guardalos separados para que no se rayen<br>✓ El baño de oro dura más cuando los cuidás 🤍',
       usePool: false,
       r1: '"El dorado es hermoso y el cierre no molesta nada. Los uso todo el día sin problema."', n1: 'Caro T.',
@@ -106,7 +112,7 @@
       cardH: '🤍 Por qué el acero blanco es una joya inteligente',
       card1txt: 'El sistema abridor con tapita reemplaza la tuerca mariposa por un cierre suave sin puntas expuestas. El brillo de la plata, a otro precio, con el cierre que no molesta.',
       matLabel: 'Acero blanco', dondeLbl: 'Dónde usarlos', dondeVal: 'Oreja',
-      cuidadoLbl: 'Cómo cuidarlos', precioPor: 'Par ✦ Dos aritos', reviewsLbl: 'Lo que dicen las que ya los tienen',
+      cuidadoLbl: 'Cómo cuidarlos', precioPorBase: 'Par ✦ Dos aritos', reviewsLbl: 'Lo que dicen las que ya los tienen',
       cuidado: '✓ Evitá el contacto con agua, pileta y productos de limpieza<br>✓ Sacátelos antes de bañarte, hacer deporte o aplicar cremas y perfumes<br>✓ Con un poco de cuidado el baño de plata dura muchísimo 🤍',
       usePool: false,
       r1: '"Se ven igual que de plata y el cierre tapita es increíble. No pincha nada."', n1: 'Male S.',
@@ -188,6 +194,7 @@
 
   function buildTapita(mat) {
     var m = MAT_TAPITA[mat];
+    var precioPor = getPrecioPorTapita(m.precioPorBase);
     var r1, n1, r2, n2;
     if (m.usePool) {
       var h1 = document.querySelector('h1');
@@ -206,7 +213,7 @@
       '</div>' +
       '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">' + m.cardH + '</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">🩷 El cierre que no pincha, nunca</div><div style="font-size:12px;color:#666;line-height:1.6;">' + m.card1txt + '</div></div></div></div>' +
       '<div style="background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:14px 16px;margin-bottom:24px;"><div style="font-size:12px;color:#795548;line-height:1.7;">⚠️ <strong>Importante:</strong> estos aritos no sirven para realizar perforaciones. Son para usar en perforaciones ya existentes con el beneficio del cierre tapita.</div></div>' +
-      '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">📋 Descripción</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + m.matLabel + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Tipo de cierre</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Abridor tapita</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">' + m.dondeLbl + '</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + m.dondeVal + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + m.precioPor + '</div></div></div></div></div>' +
+      '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">📋 Descripción</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + m.matLabel + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Tipo de cierre</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Abridor tapita</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">' + m.dondeLbl + '</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + m.dondeVal + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + precioPor + '</div></div></div></div></div>' +
       '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 ' + m.cuidadoLbl + '</div><div style="font-size:12px;color:#555;line-height:1.9;">' + m.cuidado + '</div></div>' +
       '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 ' + m.reviewsLbl + '</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div></div>' +
     '</div>';
