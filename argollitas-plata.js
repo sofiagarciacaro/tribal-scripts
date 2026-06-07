@@ -128,7 +128,6 @@
   function SF3B(mm,a,b,c,d){return buildHTML('💫 Por qué el sin fin es el más versátil','🔄 Va en oreja, nariz y ombligo','Oreja (primera, segunda o cartílago), nariz u ombligo.','Plata 925',mm,'Oreja · Nariz · Ombligo','Sin fin · Tipo piercing','Unidad',a,b,c,d,null,null,null,false,null);}
   function SF4(mm,a,b,c,d){return buildHTML('💫 Por qué el sin fin es el más versátil','🔄 Va en oreja, labio, ombligo y nariz','Oreja (primera, segunda o cartílago), labio, ombligo o nariz.','Plata 925',mm,'Oreja · Labio · Ombligo · Nariz','Sin fin · Tipo piercing','Unidad',a,b,c,d,null,null,null,false,null);}
   function SFE(mm,a,b,c,d){return buildHTML('💫 Por qué el sin fin es el más versátil','🔄 Ideal para apilar en la oreja','Primera, segunda, tercera perforación o cartílago. Fácil de poner, queda segura todo el día.','Plata 925',mm,'Oreja','Sin fin · Encaje','Unidad',a,b,c,d,null,null,null,false,null);}
-  function SFE4(mm,a,b,c,d){return buildHTML('💫 Por qué el sin fin es el más versátil','🔄 Va en oreja, labio, ombligo y nariz','Oreja (primera, segunda o cartílago), labio, ombligo o nariz.','Plata 925',mm,'Oreja · Labio · Ombligo · Nariz','Sin fin · Encaje','Unidad',a,b,c,d,null,null,null,false,null);}
   function HPAR(mm,a,b,c,d){return buildHTML('🤍 Por qué las huggie son las más elegidas','💫 Ideal para apilar y combinar','Primera, segunda o tercera perforación. El cierre huggie las mantiene firmes todo el día.','Plata 925',mm,'Oreja','Huggie','Par ✦ Dos argollas',a,b,c,d,null,null,null,false,null);}
   function BPAR(mm,a,b,c,d){return buildHTML('✨ Por qué el cierre bisagra es el favorito','💫 Fácil de poner, firme todo el día','El cierre bisagra es el más cómodo para usar a diario. Entra suave y quedan firmes.','Plata 925',mm,'Oreja','Bisagra','Par ✦ Dos argollas',a,b,c,d,null,null,null,false,null);}
   function SFEPAR(mm,a,b,c,d){return buildHTML('💫 Por qué el sin fin es el más versátil','🔄 Ideal para apilar en la oreja','Primera, segunda, tercera perforación o cartílago. Fácil de poner, quedan seguras todo el día.','Plata 925',mm,'Oreja','Sin fin · Encaje','Par ✦ Dos argollas',a,b,c,d,null,null,null,false,null);}
@@ -141,6 +140,8 @@
   function lisa(mm,dondeUsarla,precioPor,r1txt,r1nom,r2txt,r2nom){
     return buildHTML('✨ Por qué la Lisa es un básico que no puede faltar','💫 Va en cualquier perfo de la oreja','Primera, segunda, tercera o cartílago. Siempre queda bien y combina perfecto con otras joyitas.','Plata 925',mm,dondeUsarla,'Bisagra',precioPor,r1txt,r1nom,r2txt,r2nom,'🤍','La argolla que combina con todo.','Lisa, clásica y de calidad real. Va en cualquier perforación de la oreja y se adapta a todos tus looks.',false,null);
   }
+
+  // ── Productos existentes ────────────────────────────────────────────────────
 
   descripciones["/productos/abby-10mm-10515-rz3dq/"]        = HO  ('10 mm',r1(0), n1(0), r2(0), n2(0));
   descripciones["/productos/ale-perla-13mm-10523-wtqy1/"]   = B   ('13 mm',r1(1), n1(1), r2(1), n2(1));
@@ -256,23 +257,13 @@
   descripciones["/productos/lisa-10mm-00049/"] = lisa('10 mm','Oreja','Unidad','"La compré para la segunda perfo y es exactamente lo que buscaba. Simple, elegante y combina con todo lo que tengo."','Cami R.','"Me la puse en el cartílago y no me la saco más. Es re fina y discreta pero se nota. Un básico que toda colección necesita."','Lau M.');
   descripciones["/productos/lisa-12mm-00048/"] = lisa('12 mm','Oreja','Unidad','"La de 12mm es el tamaño perfecto para mí. Se ve con presencia pero sin ser exagerada. La uso todos los días."','Vale G.','"Estaba dudando entre la 10 y la 12 y elegí la más grande. No me arrepiento, se ve hermosa y es re cómoda."','Anto S.');
 
-  descripciones["/productos/par-lisa-10mm-11154-j84mj/"]   = lisa('10 mm','Oreja','Par ✦ Dos argollas','"Las compré de par y son exactamente lo que buscaba. Simples, elegantes y combinan con absolutamente todo."','Caro T.','"El par es lo más práctico. Las tengo una en cada oreja y quedan perfectas. La calidad es top para el precio."','Flor R.');
-  descripciones["/productos/par-shiny-10mm-11159-17ybm/"]  = shiny('10 mm','💰 El par sale más barato','Dos Shiny 10mm juntas salen menos que comprarlas por separado. La forma más inteligente de armar tu stack.','Par ✦ Más barato que por separado','Dónde usarlas','Cómo cuidarlas','Guardalas','Lo que dicen las que ya las tienen','"Las pedí de par y me llegaron hermosas. Las uso una en cada oreja y la gente siempre me pregunta dónde las compré."','Caro T.','"Compré el par porque me salía más barato y fue la mejor decisión. El tamaño 10mm es el clásico que nunca falla."','Flor R.');
-  descripciones["/productos/par-paris-9mm-11157-lc5zx/"]   = HPAR ('9 mm' ,r1(99), n1(99), r2(99), n2(99));
-  descripciones["/productos/par-joddie-10mm-11307-nex1b/"] = HPAR ('10 mm',r1(100),n1(100),r2(100),n2(100));
-  descripciones["/productos/par-dafne-9mm-11780-1b138/"]   = HPAR ('9 mm' ,r1(101),n1(101),r2(101),n2(101));
-  descripciones["/productos/lisa-8mm-00050-dpahm/"]        = lisa('8 mm','Oreja','Unidad','"La de 8mm es el tamaño justo para la segunda o tercera perfo. Discreta pero se nota. La uso todos los días."','Mica V.','"Simple y de calidad real. La tengo en el cartílago y combina con todo lo que me pongo. Un básico que no puede faltar."','Romi P.');
-  descripciones["/productos/emily-10mm-04820-1jfqe/"]      = SFE4('10 mm',r1(103),n1(103),r2(103),n2(103));
-  descripciones["/productos/brie-11mm-08497-135sm/"]       = H   ('11 mm',r1(104),n1(104),r2(104),n2(104));
-  descripciones["/productos/tini-11mm-10507-1i4sr/"]       = H   ('11 mm',r1(105),n1(105),r2(105),n2(105));
-  descripciones["/productos/juanis-11mm-10537-h0ga1/"]     = H   ('11 mm',r1(106),n1(106),r2(106),n2(106));
-  descripciones["/productos/lua-10mm-10548-r1ggq/"]        = H   ('10 mm',r1(107),n1(107),r2(107),n2(107));
-  descripciones["/productos/balvin-10mm-11792-lb42q/"]     = H   ('10 mm',r1(108),n1(108),r2(108),n2(108));
-  descripciones["/productos/farala-11mm-11793-1gvpr/"]     = H   ('11 mm',r1(109),n1(109),r2(109),n2(109));
-  descripciones["/productos/seven-9mm-11794-2y2uk/"]       = H   ('9 mm' ,r1(110),n1(110),r2(110),n2(110));
-  descripciones["/productos/trina-8mm-11797-1ap5p/"]       = SFE4('8 mm' ,r1(111),n1(111),r2(111),n2(111));
-  descripciones["/productos/artemis-10mm-11798-tudzv/"]    = SFE4('10 mm',r1(112),n1(112),r2(112),n2(112));
-  descripciones["/productos/dejavu-10mm-11799-187vy/"]     = B   ('10 mm',r1(113),n1(113),r2(113),n2(113));
+  // ── Productos nuevos ───────────────────────────────────────────────────────
+
+  descripciones["/productos/ofelia-10mm-11800-5i74p/"] = buildHTML('💫 Por qué el sin fin es el más versátil','🔄 Va en oreja y ombligo','Oreja (primera, segunda o cartílago) o en el ombligo para ese look de verano. Fácil de poner, queda segura todo el día.','Plata 925','10 mm','Oreja · Ombligo','Sin fin · Encaje','Unidad',r1(97),n1(97),r2(97),n2(97),null,null,null,false,null);
+  descripciones["/productos/suki-10mm-11801-1979h/"]   = SF4 ('10 mm',r1(98),n1(98),r2(98),n2(98));
+  descripciones["/productos/par-lisa-8mm-11153-2ilxb/"]= BPAR('8 mm' ,r1(99),n1(99),r2(99),n2(99));
+
+  // ── Inyección ──────────────────────────────────────────────────────────────
 
   function inyectar() {
     var path = window.location.pathname.replace(/\/$/, "") + "/";
