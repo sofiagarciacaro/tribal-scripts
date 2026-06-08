@@ -571,7 +571,7 @@
       piezas: '3 pares',
       hook: 'Tres pares, un look sin esfuerzo.',
       hookSub: 'Gota Jack con presencia + Mailis y Strass que cierran el look.<br>El look de orejas armado sin prueba y error.',
-      items: ['Aros Gota Jack 16mm · 1 par', 'Aros Mailis · 1 par', 'Aros Strass Lolita 3mm · 1 par'],
+      items: ['Aros Gota Jack 14mm · 1 par', 'Aros Mailis · 1 par', 'Aros Strass Lolita 3mm · 1 par'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     },
     'set-martsa-11772': {
