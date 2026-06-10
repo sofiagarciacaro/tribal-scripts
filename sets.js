@@ -664,6 +664,65 @@
       hookSub: 'Argollas con carácter + bolitas que equilibran perfecto.<br>El look resuelto en un solo set.',
       items: ['Argollas Lior · 1 par', 'Bolitas 3mm · 1 par'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+
+    // ── Sets nuevos cadenitas ──────────────────────────────────────────────────
+
+    'set-bolt-11814': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Cori + Bolt — dos largos, un look resuelto.',
+      hookSub: 'Dos cadenitas en largos perfectos para convivir.<br>El layering sin esfuerzo.',
+      items: ['Cadenita Cori · 40cm', 'Cadenita Bolt · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-chain-11813': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Mini Chain + Snake — el dúo que no se enreda.',
+      hookSub: 'Dos texturas distintas en largos pensados para convivir.<br>El layering resuelto sin prueba y error.',
+      items: ['Cadenita Mini Chain · 40cm', 'Cadenita Snake 3mm · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-love-11812': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Snake + High Love — romántico y sin esfuerzo.',
+      hookSub: 'Una cadenita con detalle + una clásica que la acompaña perfecto.<br>El layering resuelto de una.',
+      items: ['Cadenita Snake 4mm · 40cm', 'Cadenita High Love · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-agnes-11811': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Agnes + Snake — el layering que siempre funciona.',
+      hookSub: 'Dos largos pensados para convivir perfecto.<br>Del cuello más simple al más armado — sin pensarlo.',
+      items: ['Cadenita Agnes · 45cm', 'Cadenita Snake 3mm · 40cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-dubai-11810': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Snake + Dubai — fineza y presencia juntas.',
+      hookSub: 'Una cadenita fina que va abajo + una con más presencia arriba.<br>El layering resuelto sin prueba y error.',
+      items: ['Cadenita Snake 1.5mm · 40cm', 'Cadenita Dubai · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-malibu-11809': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Mini Malibu + Snake — el dúo de todos los días.',
+      hookSub: 'Dos cadenitas en largos perfectos para convivir.<br>El layering sin esfuerzo.',
+      items: ['Cadenita Mini Malibu · 40cm', 'Cadenita Snake 3mm · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-medal-11808': {
+      tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 cadenitas',
+      hook: 'Snake + Medal — textura y detalle en un solo look.',
+      hookSub: 'Una cadenita clásica + una con detalle que la complementa perfecto.<br>El layering resuelto sin prueba y error.',
+      items: ['Cadenita Snake 2.5mm · 40cm', 'Cadenita Medal · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
     }
   };
 
