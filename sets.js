@@ -723,6 +723,14 @@
       hookSub: 'Una cadenita clásica + una con detalle que la complementa perfecto.<br>El layering resuelto sin prueba y error.',
       items: ['Cadenita Snake 2.5mm · 40cm', 'Cadenita Medal · 45cm'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-perlas-cream-11807': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '3 pares',
+      hook: 'Tres tamaños de perla, un look con carácter.',
+      hookSub: 'Chicas, medianas y grandes que conviven perfecto en la oreja.<br>El stack de perlas ya está resuelto.',
+      items: ['Perlas Cream 4mm · 1 par', 'Perlas Cream 5mm · 1 par', 'Perlas Cream 10mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     }
   };
 
