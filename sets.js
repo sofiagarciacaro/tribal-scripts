@@ -731,6 +731,41 @@
       hookSub: 'Chicas, medianas y grandes que conviven perfecto en la oreja.<br>El stack de perlas ya está resuelto.',
       items: ['Perlas Cream 4mm · 1 par', 'Perlas Cream 5mm · 1 par', 'Perlas Cream 10mm · 1 par'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+
+    // ── Sets nuevos níquel ─────────────────────────────────────────────────────
+
+    'set-sheyla-11815': {
+      tipo: 'aros', material: 'NÍQUEL', materialSub: 'Metal plateado', materialEmoji: '🤍',
+      piezas: '2 pares',
+      hook: 'Sheila + Philip — el dúo plateado.',
+      hookSub: 'Dos estilos que se complementan en segundos.<br>El look de orejas sin esfuerzo.',
+      items: ['Argollas Sheila 12mm · 1 par', 'Aros Philip Gold · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-martu-11816': {
+      tipo: 'aros', material: 'NÍQUEL', materialSub: 'Metal plateado', materialEmoji: '🤍',
+      piezas: '2 pares',
+      hook: 'Dumblove + Maru — el dúo que no falla.',
+      hookSub: 'Dos argollas que ya combinan en la oreja.<br>El look sin prueba y error.',
+      items: ['Argollas Dumblove 13mm · 1 par', 'Argollas Maru 12mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-ellis-11817': {
+      tipo: 'aros', material: 'NÍQUEL', materialSub: 'Metal plateado', materialEmoji: '🤍',
+      piezas: '2 pares',
+      hook: 'Ellis + Besh — el dúo plateado.',
+      hookSub: 'Dos argollas que se complementan solas.<br>El stack de argollas ya está armado.',
+      items: ['Argollas Ellis Silver · 1 par', 'Argollas Besh Silver 12mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-izy-11818': {
+      tipo: 'aros', material: 'NÍQUEL', materialSub: 'Metal plateado', materialEmoji: '🤍',
+      piezas: '2 pares',
+      hook: 'Maru + Ellis — dos clásicos, un look.',
+      hookSub: 'Dos argollas que conviven perfecto en la oreja.<br>El look sin esfuerzo.',
+      items: ['Argollas Maru 12mm · 1 par', 'Aros Ellis Gold · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     }
   };
 
