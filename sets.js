@@ -1,6 +1,3 @@
-Aquí va el archivo completo:
-
-```javascript
 (function() {
 
   var CUIDADO = {
@@ -884,6 +881,3 @@ Aquí va el archivo completo:
   obs.observe(cont, { childList: true });
 
 })();
-```
-
-Listo para copiar y pegar directo en GitHub.
