@@ -1,3 +1,6 @@
+Aquí va el archivo completo:
+
+```javascript
 (function() {
 
   var CUIDADO = {
@@ -33,6 +36,14 @@
       card3t: '🌙 Para cualquier ocasión',
       card3txt: 'Uno solo para el día a día, todos juntos para cuando querés más presencia. Infinitas combinaciones.',
       reviewTitulo: 'Lo que dicen las que ya los tienen'
+    },
+    'regalo': {
+      hookEmoji: '🎁',
+      card2t: '🌙 Un regalo con historia',
+      card2txt: 'El hilo rojo invisible conecta a quienes están destinados a encontrarse. Este set lo hace tangible.',
+      card3t: '💡 Listo para regalar',
+      card3txt: 'Viene con packaging especial con el mensaje del hilo rojo. No necesitás agregar nada más.',
+      reviewTitulo: 'Lo que dicen las que ya lo regalaron'
     }
   };
 
@@ -66,6 +77,16 @@
       '"Los compré para regalo y me pidieron el link al toque."',
       '"Muy cómodos — los uso todo el día y no molestan para nada."',
       '"Se ven de joyería cara. La calidad está muy por encima del precio."'
+    ],
+    'regalo': [
+      '"Lo regalé para el día de los enamorados y la reacción fue increíble. Llegó con todo el packaging y el mensaje — perfecto."',
+      '"No tuve que envolver nada ni agregar tarjeta. Llegó listo y re prolijo. Lo volvería a comprar sin dudarlo."',
+      '"La pulsera es hermosa y la cadenita también. Pero lo que más sorprendió fue el packaging con el mensaje del hilo rojo."',
+      '"Quedó tan lindo que casi no lo quería abrir. El detalle del hilo rojo le dio otro valor al regalo."',
+      '"Lo pedí con poco tiempo y llegó antes de lo esperado. Perfecto para una ocasión especial."',
+      '"Me pidieron el link apenas lo vieron. Todo el mundo quería saber de dónde era."',
+      '"La calidad del acero se nota un montón. No es un regalito cualquiera — se siente especial."',
+      '"Lo compré para mi mejor amiga y lloró cuando lo abrió. El mensaje del hilo rojo era justo lo que necesitaba leer."'
     ]
   };
 
@@ -622,9 +643,6 @@
       items: ['Argollita Selene 10mm', 'Argollita Cira 10mm', 'Argollita Emi 10mm', 'Argollita Emi 8mm'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     },
-
-    // ── Sets nuevos ────────────────────────────────────────────────────────────
-
     'set-mailis-11802': {
       tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
       piezas: '3 pares',
@@ -665,9 +683,6 @@
       items: ['Argollas Lior · 1 par', 'Bolitas 3mm · 1 par'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     },
-
-    // ── Sets nuevos cadenitas ──────────────────────────────────────────────────
-
     'set-bolt-11814': {
       tipo: 'cadenas', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
       piezas: '2 cadenitas',
@@ -732,9 +747,6 @@
       items: ['Perlas Cream 4mm · 1 par', 'Perlas Cream 5mm · 1 par', 'Perlas Cream 10mm · 1 par'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     },
-
-    // ── Sets nuevos níquel ─────────────────────────────────────────────────────
-
     'set-sheyla-11815': {
       tipo: 'aros', material: 'NÍQUEL', materialSub: 'Metal plateado', materialEmoji: '🤍',
       piezas: '2 pares',
@@ -765,6 +777,38 @@
       hook: 'Maru + Ellis — dos clásicos, un look.',
       hookSub: 'Dos argollas que conviven perfecto en la oreja.<br>El look sin esfuerzo.',
       items: ['Argollas Maru 12mm · 1 par', 'Aros Ellis Gold · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-nere-11821': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '3 pares',
+      hook: 'Tres pares que conviven perfecto.',
+      hookSub: 'Yani, Lila y Nere — distintos estilos que se apilan solos.<br>El look de orejas sin prueba y error.',
+      items: ['Aros Yani · 1 par', 'Argollas Lila 12mm · 1 par', 'Aros Nere · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-dione-11820': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 pares',
+      hook: 'Dione + Antonia — presencia y detalle.',
+      hookSub: 'Una argolla grande que lidera + una más chica que la equilibra perfecto.<br>El dúo de argollas ya está resuelto.',
+      items: ['Argollas Dione 15mm · 1 par', 'Argollas Antonia 19mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-amaranto-11819': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 pares',
+      hook: 'Antonia + Amaranto — el dúo que no falla.',
+      hookSub: 'Dos argollas que conviven perfecto en la oreja.<br>El stack de argollas ya está resuelto.',
+      items: ['Argollas Antonia 12mm · 1 par', 'Argollas Amaranto 17mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-valentin-11136': {
+      tipo: 'regalo', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 piezas + packaging',
+      hook: 'El regalo que dice todo sin palabras.',
+      hookSub: 'Pulsera protectora + cadenita corazón, con el mensaje del hilo rojo.<br>Un regalo con historia y con forma.',
+      items: ['Pulsera Protectora · Acero quirúrgico', 'Cadenita Corazón · Acero quirúrgico', 'Packaging hilo rojo incluido'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     }
   };
@@ -840,3 +884,6 @@
   obs.observe(cont, { childList: true });
 
 })();
+```
+
+Listo para copiar y pegar directo en GitHub.
