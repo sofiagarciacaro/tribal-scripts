@@ -812,7 +812,7 @@
       tipo: 'cadenas', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
       piezas: '2 cadenitas',
       hook: 'Charm + Snake — el dúo dorado.',
-      hookSub: 'Una cadenita con dije + una fina que la acompaña perfecto.<br>El layering resuelto sin prueba y error.',
+      hookSub: 'Una cadenita con brillos + una fina que la acompaña perfecto.<br>El layering resuelto sin prueba y error.',
       items: ['Cadenita Charm · 40cm', 'Cadenita Snake 2mm · 45cm'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlas'
     },
@@ -1017,3 +1017,4 @@
   obs.observe(cont, { childList: true });
 
 })();
+
