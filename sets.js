@@ -807,6 +807,14 @@
       hookSub: 'Pulsera protectora + cadenita corazón, con el mensaje del hilo rojo.<br>Un regalo con historia y con forma.',
       items: ['Pulsera Protectora · Acero quirúrgico', 'Cadenita Corazón · Acero quirúrgico', 'Packaging hilo rojo incluido'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-rosarito-12639': {
+      tipo: 'cadenas', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '2 cadenitas',
+      hook: 'Snake + Rosarito — el dúo dorado.',
+      hookSub: 'Una cadenita con textura + una clásica que la acompaña perfecto.<br>El look dorado resuelto sin prueba y error.',
+      items: ['Cadenita Snake 6mm · 40cm', 'Cadenita Rosarito · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
     }
   };
 
