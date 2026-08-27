@@ -808,6 +808,134 @@
       items: ['Pulsera Protectora · Acero quirúrgico', 'Cadenita Corazón · Acero quirúrgico', 'Packaging hilo rojo incluido'],
       talle: null, cuidadoTitulo: 'Cómo cuidarlos'
     },
+    'set-charm-12612': {
+      tipo: 'cadenas', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '2 cadenitas',
+      hook: 'Charm + Snake — el dúo dorado.',
+      hookSub: 'Una cadenita con dije + una fina que la acompaña perfecto.<br>El layering resuelto sin prueba y error.',
+      items: ['Cadenita Charm · 40cm', 'Cadenita Snake 2mm · 45cm'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlas'
+    },
+    'set-rayitos-12609': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '5 pares',
+      hook: 'Cinco pares dorados, el look de orejas completo.',
+      hookSub: 'Rayito Strass con presencia + Grees, Nairobi, Italia y bolitas que cierran el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Aros Rayito Strass · 1 par', 'Argollas Grees · 1 par', 'Argollas Nairobi · 1 par', 'Argollas Italia · 1 par', 'Bolitas 4mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-lior-12535': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '3 pares',
+      hook: 'Tres pares dorados, un look armado.',
+      hookSub: 'Tinita con presencia + Lior y Melody que cierran el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Aros Tinita 10mm · 1 par', 'Argollas Lior · 1 par', 'Argollas Melody 10mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-lisas-x6-11151': {
+      tipo: 'aros', material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
+      piezas: '3 pares',
+      hook: 'Tres tamaños, el stack ya resuelto.',
+      hookSub: 'Argollas lisas en tres tamaños que conviven perfecto.<br>Solas o todas juntas — siempre funciona.',
+      items: ['Argollas Lisas 8mm · 1 par', 'Argollas Lisas 10mm · 1 par', 'Argollas Lisas 12mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-sean-12508': {
+      tipo: 'aros', material: 'ACERO BLANCO', materialSub: 'Baño de plata', materialEmoji: '🤍',
+      piezas: '2 pares',
+      hook: 'Sean Star + Lali — el dúo blanco.',
+      hookSub: 'Dos argollas que se complementan solas.<br>El look de orejas ya está resuelto.',
+      items: ['Argollas Sean Star 18mm · 1 par', 'Argollas Lali 15mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-star-12560': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '5 pares',
+      hook: 'Cinco pares dorados, el look de orejas completo.',
+      hookSub: 'Blinding con presencia + Wingi, Ferchu, Estrellita y Marfil que cierran el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Argollas Blinding · 1 par', 'Argollas Wingi · 1 par', 'Argollas Ferchu 10mm · 1 par', 'Argollita Estrellita · 1 par', 'Argollas Marfil · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-miara-12496': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '2 pares',
+      hook: 'Oval + Miara — el dúo dorado.',
+      hookSub: 'Dos formas que se complementan solas.<br>El look de argollas ya está resuelto.',
+      items: ['Argollas Oval · 1 par', 'Argollas Miara 13mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-miara-12497': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 pares',
+      hook: 'Oval + Miara — el dúo que no falla.',
+      hookSub: 'Dos formas que se complementan solas.<br>El look de argollas ya está resuelto.',
+      items: ['Aros Oval · 1 par', 'Aros Miara 13mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-zhamira-12507': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 pares',
+      hook: 'Antonia + Laia — presencia y detalle.',
+      hookSub: 'Una argolla grande que lidera + una más chica que la equilibra perfecto.<br>El dúo de argollas ya está resuelto.',
+      items: ['Argollas Antonia 19mm · 1 par', 'Argollas Laia 15mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-juanita-12500': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '3 pares',
+      hook: 'Tres pares, un look sin esfuerzo.',
+      hookSub: 'Perlitas con delicadeza + Antonia y Juanitas que completan el look.<br>El look de orejas armado sin prueba y error.',
+      items: ['Perlitas 4mm · 1 par', 'Argollas Antonia 12mm · 1 par', 'Aros Juanitas 13mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-amalia-11879': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '2 pares',
+      hook: 'Amalia + Amaranto — el dúo dorado.',
+      hookSub: 'Dos argollas que conviven perfecto en la oreja.<br>El stack de argollas ya está resuelto.',
+      items: ['Argollas Amalia 13mm · 1 par', 'Argollas Amaranto 17mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-exa-12492': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '2 pares',
+      hook: 'Exa Colour + Museum — el dúo dorado.',
+      hookSub: 'Dos argollas que se complementan solas.<br>El look de orejas ya está resuelto.',
+      items: ['Argollas Exa Colour 13mm · 1 par', 'Argollas Museum 20mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-laia-12494': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 pares',
+      hook: 'Laia + Antonia — el dúo que no falla.',
+      hookSub: 'Dos argollas que conviven perfecto en la oreja.<br>El stack de argollas ya está resuelto.',
+      items: ['Argollas Laia · 1 par', 'Argollas Antonia 19mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-amalia-12499': {
+      tipo: 'aros', material: 'ACERO QUIRÚRGICO', materialSub: 'Acero quirúrgico', materialEmoji: '💧',
+      piezas: '2 pares',
+      hook: 'Amalia + Amaranto — el dúo que no falla.',
+      hookSub: 'Dos argollas que conviven perfecto en la oreja.<br>El stack de argollas ya está resuelto.',
+      items: ['Aros Amalia 13mm · 1 par', 'Argollas Amaranto 17mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-lua-12536': {
+      tipo: 'aros', material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
+      piezas: '2 pares',
+      hook: 'Tini + Lua — el dúo de plata.',
+      hookSub: 'Dos argollitas que se complementan solas.<br>El look de orejas ya está resuelto.',
+      items: ['Argollitas Tini 11mm · 1 par', 'Argollitas Lua 13mm · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
+    'set-damasia-12557': {
+      tipo: 'aros', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
+      piezas: '3 pares',
+      hook: 'Tres pares dorados, el look completo.',
+      hookSub: 'Damasia con presencia + Lisa y Yani Shiny que cierran el look.<br>Ya pensamos la combinación por vos.',
+      items: ['Argollas Damasia · 1 par', 'Argollas Lisa 12mm · 1 par', 'Aros Yani Shiny · 1 par'],
+      talle: null, cuidadoTitulo: 'Cómo cuidarlos'
+    },
     'set-rosarito-12639': {
       tipo: 'cadenas', material: 'ACERO DORADO', materialSub: 'Baño de oro', materialEmoji: '✨',
       piezas: '2 cadenitas',
