@@ -151,23 +151,12 @@
     var txt = h1.textContent;
     if (/moldeable/i.test(txt)) return 'moldeable';
     if (/lazo/i.test(txt)) return 'lazo';
-    var breadcrumb = document.querySelector('[class*="breadcrumb"]');
-    if (breadcrumb && breadcrumb.textContent.toUpperCase().indexOf('LAZOS Y CHOKERS') !== -1) return 'comun';
+    if (/chocker/i.test(txt)) return 'chocker';
+    if (/cristal/i.test(txt)) {
+      var breadcrumb = document.querySelector('[class*="breadcrumb"]');
+      if (breadcrumb && breadcrumb.textContent.toUpperCase().indexOf('LAZOS Y CHOKERS') !== -1) return 'cristal';
+    }
     return null;
-  }
-
-  function buildHTMLComun() {
-    return '<div class="tribal-desc" style="font-family:Montserrat,sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.4;">' +
-      '<div style="display:flex;justify-content:space-around;text-align:center;padding:20px 12px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;margin-bottom:24px;">' +
-        '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">🤍</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">HECHO A MANO</div><div style="font-size:10px;color:#888;margin-top:2px;">Uno por uno</div></div>' +
-        '<div style="flex:1;padding:0 4px;border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;"><div style="font-size:26px;margin-bottom:6px;">✨</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">DISEÑO EXCLUSIVO</div><div style="font-size:10px;color:#888;margin-top:2px;">Solo en Tribal</div></div>' +
-        '<div style="flex:1;padding:0 4px;"><div style="font-size:26px;margin-bottom:6px;">🎀</div><div style="font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">USALO SOLO</div><div style="font-size:10px;color:#888;margin-top:2px;">O combinalo</div></div>' +
-      '</div>' +
-      '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">🤍 La historia detrás de cada accesorio</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">✂️ Hecho a mano, uno por uno, con amor</div><div style="font-size:12px;color:#666;line-height:1.6;">Cada accesorio es creado a mano por Popi - diseño propio, corte propio, terminación propia. No es producción en serie. Es un accesorio que solo vas a encontrar en Tribal, porque solo Popi los hace.</div></div></div>' +
-      '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;">📋 Descripción</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px;"><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Fundición</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Unidad</div></div></div></div>' +
-      (/chok?er/i.test((document.querySelector('h1') || {}).textContent || '') ? '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 Cómo cuidarlo</div><div style="font-size:12px;color:#555;line-height:1.9;">✓ Evitá el contacto con agua, pileta y productos de limpieza<br>✓ Sacátelo antes de bañarte o aplicar cremas y perfumes<br>✓ Con un poco de cuidado el color dura muchísimo 🤍</div></div>' : '') +
-      '<div style="background:#f9f9f9;border-radius:8px;padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:8px;">💬 ¿Querés saber más sobre esta pieza?</div><div style="font-size:12px;color:#555;line-height:1.7;">Consultanos por WhatsApp y te ayudamos a elegir.</div></div>' +
-    '</div>';
   }
 
   function getReviews(tipo) {
@@ -232,8 +221,8 @@
     if (!contenedor) return;
     if (contenedor.querySelector('.tribal-desc')) return;
 
-    var rv = tipo === 'comun' ? null : getReviews(tipo);
-    var html = tipo === 'comun' ? buildHTMLComun() : tipo === 'moldeable' ? buildHTMLMoldeable(rv) : buildHTML(tipo, rv);
+    var rv = getReviews(tipo);
+    var html = tipo === 'moldeable' ? buildHTMLMoldeable(rv) : buildHTML(tipo, rv);
     contenedor.innerHTML = html;
   }
 
