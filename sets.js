@@ -88,6 +88,64 @@
   };
 
   var SETS = {
+    "set-rubi-12787": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Rubi: 2 pares",
+      "hookSub": "Rubi 15 mm y Mendy 10 mm.",
+      "items": [
+            "Argollas Rubi 15mm · 1 par",
+            "Argollas Mendy 10mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos",
+      "brandNotes": [
+            "Rubi 15 mm y Mendy 10 mm.",
+            "2 pares de acero dorado."
+      ]
+},
+    "set-classic-13232": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Classic: 3 pares",
+      "hookSub": "Via 13 mm, Maxim 12 mm y Oval.",
+      "items": [
+            "Argollitas Via 13mm · 1 par",
+            "Argollitas Maxim 12mm · 1 par",
+            "Argollitas Oval · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos",
+      "brandNotes": [
+            "Via 13 mm, Maxim 12 mm y Oval.",
+            "3 pares de acero dorado."
+      ]
+},
+    "set-gia-13231": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Gia: 2 pares",
+      "hookSub": "Maxim 12 mm y Gia 13 mm.",
+      "items": [
+            "Argollas Maxim 12mm · 1 par",
+            "Argollas Gia 13mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos",
+      "brandNotes": [
+            "Maxim 12 mm y Gia 13 mm.",
+            "2 pares de acero dorado."
+      ]
+},
     'set-lula-11776': {
       tipo: 'aros', material: 'PLATA 925', materialSub: 'Plata real', materialEmoji: '✨',
       piezas: '4 joyitas',
@@ -1004,10 +1062,17 @@
 
     '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 ' + S.cuidadoTitulo + '</div><div style="font-size:12px;color:#555;line-height:1.9;">' + C.texto + '</div></div>' +
 
+    (S.brandNotes ?
+      '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Por qué nos gusta este set</div>' +
+      '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="font-size:12px;color:#333;line-height:1.7;">' + S.brandNotes[0] + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">Tribal · Detalles del set</div></div>' +
+      '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="font-size:12px;color:#333;line-height:1.7;">' + S.brandNotes[1] + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">Tribal · Detalles del set</div></div>' +
+      '</div>'
+    :
     '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 ' + T.reviewTitulo + '</div>' +
       '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div>' +
       '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div>' +
-    '</div>' +
+    '</div>'
+    ) +
 
   '</div>';
 
@@ -1017,4 +1082,3 @@
   obs.observe(cont, { childList: true });
 
 })();
-
