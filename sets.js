@@ -88,6 +88,21 @@
   };
 
   var SETS = {
+    "set-amalia-13059": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Amalia: 2 pares de acero quirúrgico.",
+      "hookSub": "Amalia 13 mm + Antalia 15 mm.",
+      "items": [
+            "Argollitas Amalia 13 mm · 1 par",
+            "Argollitas Antalia 15 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-laia-13226": {
       "tipo": "aros",
       "material": "ACERO QUIRÚRGICO",
