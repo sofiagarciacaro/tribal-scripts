@@ -88,6 +88,21 @@
   };
 
   var SETS = {
+    "set-spicy-13123": {
+      "tipo": "cadenas",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "2 cadenitas",
+      "hook": "Set Spicy: 2 cadenitas de acero dorado.",
+      "hookSub": "Spicy 45 cm + Cori 40 cm.",
+      "items": [
+            "Cadenita Spicy 45 cm · 1 unidad",
+            "Cadenita Cori 40 cm · 1 unidad"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlas"
+},
     "set-bambi-13224": {
       "tipo": "aros",
       "material": "ACERO DORADO",
