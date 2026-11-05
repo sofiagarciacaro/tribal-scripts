@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-dieded-13225": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Dieded: 3 pares de acero dorado.",
+      "hookSub": "Dieded 12 mm + Lulus 15 mm + Perlitas 4 mm.",
+      "items": [
+            "Argollitas Dieded 12 mm · 1 par",
+            "Argollitas Lulus 15 mm · 1 par",
+            "Perlitas 4 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-galaxia-13236": {
       "tipo": "aros",
       "material": "ACERO DORADO",
