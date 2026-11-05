@@ -88,6 +88,21 @@
   };
 
   var SETS = {
+    "set-cassie-13058": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Cassie: 2 pares de acero quirúrgico.",
+      "hookSub": "Cassie Silver 13 mm + Pike 13 mm.",
+      "items": [
+            "Argollitas Cassie Silver 13 mm · 1 par",
+            "Argollitas Pike 13 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-amalia-13059": {
       "tipo": "aros",
       "material": "ACERO QUIRÚRGICO",
