@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-galaxia-13236": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Galaxia: 3 pares de acero dorado.",
+      "hookSub": "Dominique 12 mm + Lunna 12 mm + Planetas 12 mm.",
+      "items": [
+            "Argollitas Dominique 12 mm · 1 par",
+            "Argollitas Lunna 12 mm · 1 par",
+            "Argollitas Planetas 12 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-lauta-13230": {
       "tipo": "aros",
       "material": "ACERO DORADO",
