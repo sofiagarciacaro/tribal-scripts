@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-lauta-13230": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Lauta: 3 pares de acero dorado.",
+      "hookSub": "Antalia 15 mm + Lauta 15 mm + aritos Yani.",
+      "items": [
+            "Argollas Antalia 15 mm · 1 par",
+            "Argollas Lauta 15 mm · 1 par",
+            "Aritos Yani · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-rubi-12787": {
       "tipo": "aros",
       "material": "ACERO DORADO",
