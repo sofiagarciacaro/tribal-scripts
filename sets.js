@@ -1062,17 +1062,7 @@
 
     '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 ' + S.cuidadoTitulo + '</div><div style="font-size:12px;color:#555;line-height:1.9;">' + C.texto + '</div></div>' +
 
-    (S.brandNotes ?
-      '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Por qué nos gusta este set</div>' +
-      '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="font-size:12px;color:#333;line-height:1.7;">' + S.brandNotes[0] + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">Tribal · Detalles del set</div></div>' +
-      '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="font-size:12px;color:#333;line-height:1.7;">' + S.brandNotes[1] + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">Tribal · Detalles del set</div></div>' +
-      '</div>'
-    :
-    '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 ' + T.reviewTitulo + '</div>' +
-      '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div>' +
-      '<div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div>' +
-    '</div>'
-    ) +
+    '' +
 
   '</div>';
 
