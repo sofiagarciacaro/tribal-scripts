@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-bambi-13224": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Bambi: 3 pares de acero dorado.",
+      "hookSub": "Aros Bambi + argollas Eliza 14 mm y Mendy 10 mm.",
+      "items": [
+            "Aros Bambi · 1 par",
+            "Argollas Eliza 14 mm · 1 par",
+            "Argollas Mendy 10 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-cassie-13058": {
       "tipo": "aros",
       "material": "ACERO QUIRÚRGICO",
