@@ -88,6 +88,21 @@
   };
 
   var SETS = {
+    "set-laia-13226": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Laia: 2 pares de acero quirúrgico.",
+      "hookSub": "Laia 15 mm + Gia 13 mm.",
+      "items": [
+            "Argollitas Laia 15 mm · 1 par",
+            "Argollitas Gia 13 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-dieded-13225": {
       "tipo": "aros",
       "material": "ACERO DORADO",
