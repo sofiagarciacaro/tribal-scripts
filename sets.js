@@ -94,8 +94,8 @@
       "materialSub": "Baño de oro",
       "materialEmoji": "✨",
       "piezas": "2 pares",
-      "hook": "Set Rubi: 2 pares",
-      "hookSub": "Rubi 15 mm y Mendy 10 mm.",
+      "hook": "Rubi + Mendy: el dúo dorado.",
+      "hookSub": "Dos pares de argollitas que se complementan solos.<br>El look de orejas ya está resuelto.",
       "items": [
             "Argollas Rubi 15mm · 1 par",
             "Argollas Mendy 10mm · 1 par"
@@ -113,8 +113,8 @@
       "materialSub": "Baño de oro",
       "materialEmoji": "✨",
       "piezas": "3 pares",
-      "hook": "Set Classic: 3 pares",
-      "hookSub": "Via 13 mm, Maxim 12 mm y Oval.",
+      "hook": "Via + Maxim + Oval: el trío dorado.",
+      "hookSub": "Tres pares de argollitas para combinar.<br>Un set, distintas formas de llevarlo.",
       "items": [
             "Argollitas Via 13mm · 1 par",
             "Argollitas Maxim 12mm · 1 par",
@@ -133,8 +133,8 @@
       "materialSub": "Baño de oro",
       "materialEmoji": "✨",
       "piezas": "2 pares",
-      "hook": "Set Gia: 2 pares",
-      "hookSub": "Maxim 12 mm y Gia 13 mm.",
+      "hook": "Maxim + Gia: el dúo dorado.",
+      "hookSub": "Dos pares de argollitas que se complementan solos.<br>El look de orejas ya está resuelto.",
       "items": [
             "Argollas Maxim 12mm · 1 par",
             "Argollas Gia 13mm · 1 par"
