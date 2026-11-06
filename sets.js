@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-andrea-13227": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Andrea: 3 pares de acero quirúrgico.",
+      "hookSub": "Aros Andrea + argollitas Susy 15 mm y Jaimet 13 mm.",
+      "items": [
+            "Aros Andrea · 1 par",
+            "Argollitas Susy 15 mm · 1 par",
+            "Argollitas Jaimet 13 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-spicy-13123": {
       "tipo": "cadenas",
       "material": "ACERO DORADO",
