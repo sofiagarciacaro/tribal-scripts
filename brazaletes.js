@@ -195,11 +195,49 @@
     return m ? CODE_MAP[m[1]] : undefined;
   }
 
+  function categoriasProducto() {
+    var sc = document.getElementById('nube-sdk-script');
+    if (!sc) return null;
+    var t = sc.textContent;
+    var i = t.indexOf('"categories":');
+    if (i === -1) i = t.indexOf('categories:');
+    if (i === -1) return null;
+    i = t.indexOf('[', i);
+    if (i === -1) return null;
+    var depth = 0, j = -1, inStr = false, esc = false;
+    for (var k = i; k < t.length; k++) {
+      var c = t.charAt(k);
+      if (inStr) {
+        if (esc) esc = false;
+        else if (c === '\\') esc = true;
+        else if (c === '"') inStr = false;
+        continue;
+      }
+      if (c === '"') inStr = true;
+      else if (c === '[') depth++;
+      else if (c === ']') { depth--; if (depth === 0) { j = k; break; } }
+    }
+    if (j === -1) return null;
+    var names = [];
+    var arr = null;
+    try { arr = JSON.parse(t.slice(i, j + 1)); } catch (e) {}
+    if (arr) {
+      for (var a = 0; a < arr.length; a++) {
+        if (arr[a] && typeof arr[a].name === 'string') names.push(arr[a].name.trim().toUpperCase());
+      }
+    } else {
+      var slice = t.slice(i, j);
+      var re = /"?name"?:\s*"((?:[^"\\]|\\.)*)"/g, mm;
+      while ((mm = re.exec(slice)) !== null) {
+        try { names.push(JSON.parse('"' + mm[1] + '"').trim().toUpperCase()); } catch (e) {}
+      }
+    }
+    return names.length ? names : null;
+  }
+
   function esBrazalete() {
-    var sc = document.querySelector('#nube-sdk-script');
-    if (!sc) return false;
-    var m = sc.textContent.match(/product:\s*\{[^}]*?categories:\s*\[(.*?)\]/);
-    return !!(m && m[1].indexOf('"BRAZALETES"') !== -1);
+    var cats = categoriasProducto();
+    return !!(cats && cats.indexOf('BRAZALETES') !== -1);
   }
 
   function colorPorNombre() {
