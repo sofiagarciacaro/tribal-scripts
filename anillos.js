@@ -106,6 +106,24 @@
     '/productos/rochi-regulable-10680-cw6sn/': 'ACERO BLANCO',
     '/productos/mau-regulable-10696-59vn5/':   'ACERO DORADO'
   };
+  function categoriasProducto() {
+    var sc = document.getElementById('nube-sdk-script');
+    if (!sc) return null;
+    var i = sc.textContent.indexOf('categories:');
+    if (i === -1) return null;
+    var j = sc.textContent.indexOf(']', i);
+    if (j === -1) return null;
+    var slice = sc.textContent.slice(i, j);
+    var names = [];
+    var re = /name:\s*"((?:[^"\\]|\\.)*)"/g, mm;
+    while ((mm = re.exec(slice)) !== null) {
+      try { names.push(JSON.parse('"' + mm[1] + '"').trim().toUpperCase()); } catch (e) {}
+    }
+    return names.length ? names : null;
+  }
+
+  var usoCategorias = false;
+
   function getMaterial() {
     var path = window.location.pathname.replace(/\/$/, '') + '/';
     if (URL_MATERIAL[path]) return URL_MATERIAL[path];
@@ -113,6 +131,12 @@
     for (var i = 0; i < items.length; i++) {
       var txt = items[i].textContent.trim().toUpperCase();
       if (MATERIALES[txt]) return txt;
+    }
+    var cats = categoriasProducto();
+    if (cats && cats.indexOf('ANILLOS') !== -1) {
+      for (var j = 0; j < cats.length; j++) {
+        if (MATERIALES[cats[j]]) { usoCategorias = true; return cats[j]; }
+      }
     }
     return null;
   }
@@ -151,10 +175,11 @@
       '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">' + m.cardH + '</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;overflow:hidden;"><div style="padding:16px;"><div style="font-size:13px;font-weight:700;margin-bottom:5px;">' + m.card1t + '</div><div style="font-size:12px;color:#666;line-height:1.6;">' + m.card1txt + '</div></div></div></div>' +
       '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">📋 Descripción</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + matLabel + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Talle</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + talleData.talle + '</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Diámetro interno</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + talleData.diametro + '</div></div></div></div></div>' +
       '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 Cómo cuidarlo</div><div style="font-size:12px;color:#555;line-height:1.9;">' + m.cuidado + '</div></div>' +
-      '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya lo tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div></div>' +
+           (usoCategorias ? '' :'<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya lo tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div></div>') +
     '</div>';
   }
   function inyectar() {
+    usoCategorias = false;
     var mat = getMaterial();
     if (!mat) return;
     var talle = getTalle();
