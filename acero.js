@@ -300,6 +300,24 @@
     '/productos/set-vitas-11743-86g8y/':         true
   };
 
+  function categoriasProducto() {
+    var sc = document.getElementById('nube-sdk-script');
+    if (!sc) return null;
+    var i = sc.textContent.indexOf('categories:');
+    if (i === -1) return null;
+    var j = sc.textContent.indexOf(']', i);
+    if (j === -1) return null;
+    var slice = sc.textContent.slice(i, j);
+    var names = [];
+    var re = /name:\s*"((?:[^"\\]|\\.)*)"/g, mm;
+    while ((mm = re.exec(slice)) !== null) {
+      try { names.push(JSON.parse('"' + mm[1] + '"').trim().toUpperCase()); } catch (e) {}
+    }
+    return names.length ? names : null;
+  }
+
+  var usoCategorias = false;
+
   function detectarTipo() {
     var path = window.location.pathname.replace(/\/$/, '') + '/';
     if (URL_PROTECTORAS[path]) return 'protectora';
@@ -319,6 +337,23 @@
     return null;
   }
 
+  function detectarTipoPorCategorias() {
+    var cats = categoriasProducto();
+    if (!cats) return null;
+    for (var i = 0; i < cats.length; i++) {
+      if (cats[i].indexOf('SETS ARMADOS') === 0) return null;
+    }
+    var has = function(n) { return cats.indexOf(n) !== -1; };
+    if (has('TOBILLERAS')) return 'tobillera';
+    if (has('ARGOLLAS')) {
+      if (has('PLATA 925')) return null;
+      return 'argolla';
+    }
+    if (has('AROS')) return 'aro';
+    if (has('PULSERAS')) return 'pulsera';
+    return null;
+  }
+
   function getMaterial(tipo) {
     var path = window.location.pathname.replace(/\/$/, '') + '/';
     if (tipo === 'argolla' && URL_FALLBACK_ARGOLLAS[path]) return URL_FALLBACK_ARGOLLAS[path];
@@ -329,6 +364,13 @@
       var txt = items[i].textContent.trim().toUpperCase().replace(/\s+/g, ' ');
       if (MAT[txt]) return txt;
       if (txt === 'NÍQUEL' || txt === 'NIQUEL') return 'NIQUEL';
+    }
+    var cats = categoriasProducto();
+    if (cats) {
+      for (var j = 0; j < cats.length; j++) {
+        if (MAT[cats[j]]) { usoCategorias = true; return cats[j]; }
+        if (cats[j] === 'NÍQUEL' || cats[j] === 'NIQUEL') { usoCategorias = true; return 'NIQUEL'; }
+      }
     }
     return null;
   }
@@ -405,14 +447,26 @@
       '<div style="margin-bottom:24px;"><div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;letter-spacing:0.3px;">📋 Descripción</div><div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;"><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">' + buildFicha(tipo, mat, matLabel) + '</div></div></div>' +
       mixBlock +
       '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 Cómo cuidarla</div><div style="font-size:12px;color:#555;line-height:1.9;">' + m.cuidado + '</div></div>' +
-      '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya la tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div></div>' +
+      (usoCategorias ? '' : '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya la tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + n2 + ' · Compra verificada ✓</div></div></div>') +
     '</div>';
   }
 
   function inyectar() {
     var path = window.location.pathname.replace(/\/$/, '') + '/';
     if (URL_EXCLUIR[path]) return;
+    var catsGuard = categoriasProducto();
+    if (catsGuard) {
+      for (var g = 0; g < catsGuard.length; g++) {
+        if (catsGuard[g].indexOf('SETS ARMADOS') === 0) return;
+      }
+      if (catsGuard.indexOf('ARGOLLAS') !== -1 && catsGuard.indexOf('PLATA 925') !== -1) return;
+    }
+    usoCategorias = false;
     var tipo = detectarTipo();
+    if (!tipo) {
+      tipo = detectarTipoPorCategorias();
+      if (tipo) usoCategorias = true;
+    }
     if (!tipo) return;
     var contenedor = document.querySelector('#product-description');
     if (!contenedor || contenedor.querySelector('.tribal-desc')) return;
