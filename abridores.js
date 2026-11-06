@@ -129,6 +129,82 @@
     quirurgico:{ badge2e: '💪', badge2t: 'ACERO QUIRÚRGICO', badge2s: 'Hipoalergénico',    aroLabel: 'Aro de acero quirúrgico ya cargado' }
   };
 
+  function categoriasProducto() {
+    var sc = document.getElementById('nube-sdk-script');
+    if (!sc) return null;
+    var t = sc.textContent;
+    var i = t.indexOf('"categories":');
+    if (i === -1) i = t.indexOf('categories:');
+    if (i === -1) return null;
+    i = t.indexOf('[', i);
+    if (i === -1) return null;
+    var depth = 0, j = -1, inStr = false, esc = false;
+    for (var k = i; k < t.length; k++) {
+      var c = t.charAt(k);
+      if (inStr) {
+        if (esc) esc = false;
+        else if (c === '\\') esc = true;
+        else if (c === '"') inStr = false;
+        continue;
+      }
+      if (c === '"') inStr = true;
+      else if (c === '[') depth++;
+      else if (c === ']') { depth--; if (depth === 0) { j = k; break; } }
+    }
+    if (j === -1) return null;
+    var names = [];
+    var arr = null;
+    try { arr = JSON.parse(t.slice(i, j + 1)); } catch (e) {}
+    if (arr) {
+      for (var a = 0; a < arr.length; a++) {
+        if (arr[a] && typeof arr[a].name === 'string') names.push(arr[a].name.trim().toUpperCase());
+      }
+    } else {
+      var slice = t.slice(i, j);
+      var re = /"?name"?:\s*"((?:[^"\\]|\\.)*)"/g, mm;
+      while ((mm = re.exec(slice)) !== null) {
+        try { names.push(JSON.parse('"' + mm[1] + '"').trim().toUpperCase()); } catch (e) {}
+      }
+    }
+    return names.length ? names : null;
+  }
+
+  // Productos no-plata ya publicados: conservar su ficha actual.
+  var CODIGOS_ACTUALES = ["08965", "08966", "11830", "11831", "09502", "09503", "09477", "09273", "08862", "09419", "01572", "12927", "08088", "12342", "00168", "12341"];
+
+  function esActual() {
+    var h1 = document.querySelector('h1');
+    var m = h1 && h1.textContent.match(/\((\d+)\)/);
+    return !!(m && CODIGOS_ACTUALES.indexOf(m[1]) !== -1);
+  }
+
+  function materialAcero(cats) {
+    if (!cats || cats.indexOf('PLATA 925') !== -1) return null;
+    var encontrados = [];
+    var materiales = ['ACERO BLANCO', 'ACERO DORADO', 'ACERO QUIRÚRGICO'];
+    for (var i = 0; i < materiales.length; i++) {
+      if (cats.indexOf(materiales[i]) !== -1) encontrados.push(materiales[i]);
+    }
+    return encontrados.length === 1 ? encontrados[0] : null;
+  }
+
+  function buildNuevo(cats) {
+    var mat = materialAcero(cats);
+    var h1 = document.querySelector('h1');
+    var nombre = h1 ? h1.textContent : '';
+    var tipo = /pistola abridora/i.test(nombre) ? 'Pistola abridora' :
+      (/abridores pistola/i.test(nombre) ? 'Repuesto para pistola abridora' : 'Abridor');
+    if (!mat && cats.indexOf('PISTOLITA ABRIDORA') === -1) return null;
+    // Sin reseñas, cantidades, técnica de perforación ni promesas médicas.
+    return '<div class="tribal-desc" style="font-family:Montserrat,sans-serif;max-width:780px;margin:0 auto;padding:20px 0;color:#1a1a1a;line-height:1.5;">' +
+      '<div style="background:#df598c;color:white;padding:12px 16px;border-radius:8px 8px 0 0;font-size:13px;font-weight:700;">📋 Descripción</div>' +
+      '<div style="border:1px solid #e8e8e8;border-top:none;border-radius:0 0 8px 8px;padding:16px;">' +
+      '<div style="font-size:10px;color:#777;font-weight:700;text-transform:uppercase;">Tipo de producto</div>' +
+      '<div style="font-size:13px;font-weight:700;margin-top:3px;">' + tipo + '</div>' +
+      (mat ? '<div style="font-size:10px;color:#777;font-weight:700;text-transform:uppercase;margin-top:16px;">Material según categoría</div><div style="font-size:13px;font-weight:700;margin-top:3px;">' + MAT_TAPITA[mat].matLabel + '</div>' : '') +
+      '</div></div>';
+  }
+
   function detectarTipo() {
     var h1 = document.querySelector('h1');
     var h1txt = h1 ? h1.textContent : '';
@@ -136,6 +212,8 @@
     if (/abridores pistola/i.test(h1txt)) return 'repuesto';
     var path = window.location.pathname.replace(/\/$/, '') + '/';
     if (URL_FALLBACK_TAPITA[path]) return 'tapita';
+    var cats = categoriasProducto();
+    if (cats && cats.indexOf('ABRIDORES') !== -1 && materialAcero(cats)) return 'tapita';
     var breadcrumb = document.querySelector('[class*="breadcrumb"]');
     if (!breadcrumb) return null;
     var txt = breadcrumb.textContent.toUpperCase();
@@ -146,6 +224,9 @@
   function getMaterialTapita() {
     var path = window.location.pathname.replace(/\/$/, '') + '/';
     if (URL_FALLBACK_TAPITA[path]) return URL_FALLBACK_TAPITA[path];
+    var cats = categoriasProducto();
+    var acero = cats && cats.indexOf('ABRIDORES') !== -1 ? materialAcero(cats) : null;
+    if (acero) return acero;
     var items = document.querySelectorAll('[class*="breadcrumb"] a, [class*="breadcrumb"] span, [class*="breadcrumb"] li');
     for (var i = 0; i < items.length; i++) {
       var txt = items[i].textContent.trim().toUpperCase().replace(/\s+/g, ' ');
@@ -220,6 +301,20 @@
   }
 
   function detectarYInyectar() {
+    var cats = categoriasProducto();
+    var breadcrumb = document.querySelector('[class*="breadcrumb"]');
+    var path = window.location.pathname.replace(/\/$/, '') + '/';
+    var plata = (cats && cats.indexOf('PLATA 925') !== -1) ||
+      (breadcrumb && breadcrumb.textContent.toUpperCase().indexOf('PLATA 925') !== -1) ||
+      URL_FALLBACK_TAPITA[path] === 'PLATA 925';
+    if (!plata && !esActual()) {
+      if (!cats || cats.indexOf('ABRIDORES') === -1) return;
+      var nuevoContenedor = document.querySelector('#product-description');
+      if (!nuevoContenedor || nuevoContenedor.querySelector('.tribal-desc')) return;
+      var nuevoHTML = buildNuevo(cats);
+      if (nuevoHTML) nuevoContenedor.innerHTML = nuevoHTML;
+      return;
+    }
     var tipo = detectarTipo();
     if (!tipo) return;
     var contenedor = document.querySelector('#product-description');
