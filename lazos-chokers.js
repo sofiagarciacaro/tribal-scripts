@@ -44,7 +44,7 @@
         '"Me lo ató mi hermana de una forma que ni sabía que se podía. Quedó increíble."'
       ]
     },
-    chocker: {
+    choker: {
       badge3e: '👑', badge3t: 'ACCESORIO ESTRELLA', badge3s: 'Eleva cualquier look',
       cardH: '🤍 La historia detrás de cada chocker',
       card1txt: 'Cada chocker es creado a mano por Popi — diseño propio, gamuza y piezas de fundición seleccionadas una por una. No es producción en serie. Es un accesorio que solo vas a encontrar en Tribal, porque solo Popi los hace.',
