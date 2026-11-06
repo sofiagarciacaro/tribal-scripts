@@ -46,38 +46,12 @@
     },
     choker: {
       badge3e: '👑', badge3t: 'ACCESORIO ESTRELLA', badge3s: 'Eleva cualquier look',
-      cardH: '🤍 La historia detrás de cada chocker',
-      card1txt: 'Cada chocker es creado a mano por Popi — diseño propio, gamuza y piezas de fundición seleccionadas una por una. No es producción en serie. Es un accesorio que solo vas a encontrar en Tribal, porque solo Popi los hace.',
+      cardH: '🤍 La historia detrás de cada choker',
+      card1txt: 'Cada choker es creado a mano por Popi — diseño propio y piezas de fundición seleccionadas una por una. No es producción en serie. Es un accesorio que solo vas a encontrar en Tribal, porque solo Popi los hace.',
       extraSeccion: '',
-      ficha: '<div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Gamuza y fundición</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Dónde usarlo</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Cuello</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Fabricación</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Hecho a mano</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Unidad</div></div>',
+      ficha: '<div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Material</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Fundición</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Dónde usarlo</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Cuello</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Fabricación</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Hecho a mano</div></div><div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Unidad</div></div>',
       cuidado: '✓ Guardalo colgado o enrollado con cuidado para que no se deforme<br>✓ Evitá el contacto con agua y productos<br>✓ Con un poco de cuidado dura muchísimo 🤍',
-      reviews: [
-        '"Me lo puse y no me lo saco más. La combinación de gamuza con las piezas de fundición es una locura."',
-        '"Me preguntaron dónde lo compré apenas me lo vieron. Es único, no hay otro igual."',
-        '"La terminación es increíble para ser hecho a mano. Se nota el cuidado en cada detalle."',
-        '"Lo compré sin pensarlo mucho y fue la mejor decisión. Lo uso con todo."',
-        '"Se ve carísimo y la verdad es que vale cada peso. Lo recomiendo 100%."',
-        '"Es el accesorio que más complimenta recibo. Siempre me preguntan dónde lo conseguí."',
-        '"La gamuza es súper suave y las piezas de fundición le dan un toque único."',
-        '"Lo usé para una cena y fue lo primero que notaron. Eleva cualquier look."',
-        '"Llegó súper bien embalado. Se nota que hay amor en cómo lo hacen."',
-        '"No encontré nada parecido en ningún otro lado. Es realmente exclusivo."',
-        '"Lo regalé y mi amiga me escribió al toque para agradecerme. Lo amó."',
-        '"Es el tipo de accesorio que transforma un outfit simple en algo especial."',
-        '"La calidad es increíble. Se nota que cada pieza está hecha con cuidado."',
-        '"Lo uso en el cuello y cambia todo el look. Es el foco del outfit."',
-        '"Compré el Brown y ya quiero el Gold. Son adictivos."',
-        '"Nunca había comprado algo así y me arrepiento de no haberlo hecho antes."',
-        '"El diseño es tan especial que parece de joyería fina. No lo podía creer."',
-        '"Me lo até de una forma distinta cada vez y siempre queda hermoso."',
-        '"Es exactamente como en la foto. Llegó rápido y en perfecto estado."',
-        '"La combinación de materiales es muy original. Se ve sofisticado y diferente."',
-        '"Me encantó saber que está hecho a mano. Lo hace todavía más especial."',
-        '"Ya lo usé tres veces esta semana. Es el accesorio que más uso."',
-        '"Perfecto para usar con cualquier cosa. Le da personalidad a cualquier look."',
-        '"La atención al detalle es impresionante. Se nota que hay una persona detrás."',
-        '"Lo vi en Instagram y no dudé. No me arrepentí para nada."'
-      ]
+      reviews: []
     },
     cristal: {
       badge3e: '💫', badge3t: 'BRILLO ÚNICO', badge3s: 'Efecto cristal',
@@ -145,17 +119,25 @@
     }
   };
 
+  // Categorias completas del producto principal, no solo la ruta visible.
+  function esLazosYChokers() {
+    var sdk = document.querySelector('#nube-sdk-script');
+    if (!sdk) return false;
+    var datos = sdk.textContent.match(/product:\s*\{\s*id:\s*(\d+),[\s\S]*?categories:\s*(\[[\s\S]*?\])/);
+    if (!datos) return false;
+    var actual = window.LS && window.LS.product;
+    if (!actual || String(actual.id) !== datos[1]) return false;
+    return /\bid:\s*27228428\b/.test(datos[2]);
+  }
+
   function detectarTipo() {
     var h1 = document.querySelector('h1');
     if (!h1) return null;
     var txt = h1.textContent;
     if (/moldeable/i.test(txt)) return 'moldeable';
     if (/lazo/i.test(txt)) return 'lazo';
-    if (/chocker/i.test(txt)) return 'chocker';
-    if (/cristal/i.test(txt)) {
-      var breadcrumb = document.querySelector('[class*="breadcrumb"]');
-      if (breadcrumb && breadcrumb.textContent.toUpperCase().indexOf('LAZOS Y CHOKERS') !== -1) return 'cristal';
-    }
+    // La ficha comun solo se aplica a miembros de Lazos y Chokers.
+    if (esLazosYChokers()) return 'choker';
     return null;
   }
 
@@ -208,7 +190,7 @@
 
       '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 Cómo cuidarlo</div><div style="font-size:12px;color:#555;line-height:1.9;">' + t.cuidado + '</div></div>' +
 
-      '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya lo tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + rv.r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + rv.n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + rv.r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + rv.n2 + ' · Compra verificada ✓</div></div></div>' +
+      (tipo === 'choker' ? '' : '<div style="margin-bottom:24px;"><div style="font-size:14px;font-weight:800;margin-bottom:12px;">💬 Lo que dicen las que ya lo tienen</div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;margin-bottom:10px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + rv.r1 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + rv.n1 + ' · Compra verificada ✓</div></div><div style="border:1px solid #e8e8e8;border-radius:8px;padding:16px;"><div style="color:#c41163;font-size:13px;margin-bottom:6px;letter-spacing:1px;">★★★★★</div><div style="font-size:12px;color:#333;line-height:1.7;font-style:italic;">' + rv.r2 + '</div><div style="font-size:11px;color:#aaa;margin-top:8px;">' + rv.n2 + ' · Compra verificada ✓</div></div></div>') +
 
     '</div>';
   }
@@ -221,7 +203,7 @@
     if (!contenedor) return;
     if (contenedor.querySelector('.tribal-desc')) return;
 
-    var rv = getReviews(tipo);
+    var rv = tipo === 'choker' ? null : getReviews(tipo);
     var html = tipo === 'moldeable' ? buildHTMLMoldeable(rv) : buildHTML(tipo, rv);
     contenedor.innerHTML = html;
   }
