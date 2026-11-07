@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-lagrimas-13265": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Baño de oro",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Lagrimas: 3 pares de acero dorado.",
+      "hookSub": "Aritos Lagrimitas + argollitas Eugenia 15 mm y Maxim 12 mm.",
+      "items": [
+            "Aritos Lagrimitas · 1 par",
+            "Argollitas Eugenia 15 mm · 1 par",
+            "Argollitas Maxim 12 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-andrea-13227": {
       "tipo": "aros",
       "material": "ACERO QUIRÚRGICO",
