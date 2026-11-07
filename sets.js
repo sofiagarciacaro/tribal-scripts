@@ -91,7 +91,7 @@
     "set-lagrimas-13265": {
       "tipo": "aros",
       "material": "ACERO DORADO",
-      "materialSub": "Baño de oro",
+      "materialSub": "Acero dorado",
       "materialEmoji": "✨",
       "piezas": "3 pares",
       "hook": "Set Lagrimas: 3 pares de acero dorado.",
@@ -102,7 +102,8 @@
             "Argollitas Maxim 12 mm · 1 par"
       ],
       "talle": null,
-      "cuidadoTitulo": "Cómo cuidarlos"
+      "cuidadoTitulo": "Cómo cuidarlos",
+      "cuidadoTexto": "✓ Evitá el contacto prolongado con agua, perfume y cremas<br>✓ Guardá las piezas separadas para que no se rayen 🤍"
 },
     "set-andrea-13227": {
       "tipo": "aros",
@@ -1216,7 +1217,7 @@
       '<div><div style="font-size:10px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">Precio por</div><div style="font-size:13px;font-weight:700;margin-top:3px;">Set completo</div></div>' +
     '</div></div></div>' +
 
-    '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 ' + S.cuidadoTitulo + '</div><div style="font-size:12px;color:#555;line-height:1.9;">' + C.texto + '</div></div>' +
+    '<div style="background:#f9f9f9;border-radius:8px;padding:16px;margin-bottom:24px;"><div style="font-size:13px;font-weight:700;margin-bottom:10px;">🧴 ' + S.cuidadoTitulo + '</div><div style="font-size:12px;color:#555;line-height:1.9;">' + (S.cuidadoTexto || C.texto) + '</div></div>' +
 
     '' +
 
