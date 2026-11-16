@@ -88,6 +88,36 @@
   };
 
   var SETS = {
+    "set-liverpool-13351": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Acero dorado",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Liverpool: 2 pares de acero dorado.",
+      "hookSub": "Aros Liverpool 3 mm + Aros Liverpool 4 mm.",
+      "items": [
+            "Aros Liverpool 3 mm · 1 par",
+            "Aros Liverpool 4 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
+    "set-liverpool-13350": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Liverpool: 2 pares de acero quirúrgico.",
+      "hookSub": "Aros Liverpool 3 mm + Aros Liverpool 5 mm.",
+      "items": [
+            "Aros Liverpool 3 mm · 1 par",
+            "Aros Liverpool 5 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-ria-13348": {
       "tipo": "aros",
       "material": "ACERO QUIRÚRGICO",
