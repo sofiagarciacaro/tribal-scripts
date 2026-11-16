@@ -88,6 +88,22 @@
   };
 
   var SETS = {
+    "set-ria-13348": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Ria: 3 pares de acero quirúrgico.",
+      "hookSub": "Aros Liverpool 3 mm + argollitas Delfinitas 13 mm y Ria 13 mm.",
+      "items": [
+            "Aros Liverpool 3 mm · 1 par",
+            "Argollitas Delfinitas 13 mm · 1 par",
+            "Argollitas Ria 13 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-lagrimas-13265": {
       "tipo": "aros",
       "material": "ACERO DORADO",
