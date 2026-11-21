@@ -88,6 +88,99 @@
   };
 
   var SETS = {
+    "set-bichitos-13271": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Acero dorado",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Bichitos: 3 pares de acero dorado.",
+      "hookSub": "Aritos Mariquita + Coquette y Bee.",
+      "items": [
+            "Aritos Mariquita · 1 par",
+            "Aritos Coquette · 1 par",
+            "Aritos Bee · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
+    "set-bichitos-13267": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Bichitos: 3 pares de acero quirúrgico.",
+      "hookSub": "Aritos Mariquita + Coquette y Bee.",
+      "items": [
+            "Aritos Mariquita · 1 par",
+            "Aritos Coquette · 1 par",
+            "Aritos Bee · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
+    "set-honguito-13272": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Acero dorado",
+      "materialEmoji": "✨",
+      "piezas": "3 pares",
+      "hook": "Set Honguito: 3 pares de acero dorado.",
+      "hookSub": "Aritos Estrellita + Honguitos y Lagrimitas.",
+      "items": [
+            "Aritos Estrellita · 1 par",
+            "Aritos Honguitos · 1 par",
+            "Aritos Lagrimitas · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
+    "set-rochi-13281": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Acero dorado",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Rochi: 2 pares de acero dorado.",
+      "hookSub": "Argollitas Pistar 12 mm y Rochi 12 mm.",
+      "items": [
+            "Argollitas Pistar 12 mm · 1 par",
+            "Argollitas Rochi 12 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
+    "set-rochi-13290": {
+      "tipo": "aros",
+      "material": "ACERO QUIRÚRGICO",
+      "materialSub": "Acero quirúrgico",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Rochi: 2 pares de acero quirúrgico.",
+      "hookSub": "Argollitas Rochi 12 mm y Pistar 12 mm.",
+      "items": [
+            "Argollitas Rochi 12 mm · 1 par",
+            "Argollitas Pistar 12 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
+    "set-shandon-13266": {
+      "tipo": "aros",
+      "material": "ACERO DORADO",
+      "materialSub": "Acero dorado",
+      "materialEmoji": "✨",
+      "piezas": "2 pares",
+      "hook": "Set Shandon: 2 pares de acero dorado.",
+      "hookSub": "Argollitas Shandon 12 mm y Lali 15 mm.",
+      "items": [
+            "Argollitas Shandon 12 mm · 1 par",
+            "Argollitas Lali 15 mm · 1 par"
+      ],
+      "talle": null,
+      "cuidadoTitulo": "Cómo cuidarlos"
+},
     "set-liverpool-13351": {
       "tipo": "aros",
       "material": "ACERO DORADO",
